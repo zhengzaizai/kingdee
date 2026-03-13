@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>金蝶智能问答</title>
+<style>
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+:root {
+  --sidebar-w: 260px;
+  --bg: #ffffff;
+  --sidebar-bg: #f9f9f9;
+  --sidebar-border: #e5e5e5;
+  --text-primary: #0d0d0d;
+  --text-secondary: #6e6e80;
+  --text-muted: #acacbe;
+  --accent: #10a37f;
+  --accent-hover: #0d8c6d;
+  --user-bubble: #f4f4f4;
+  --input-border: #d9d9e3;
+  --hover-bg: #ececec;
+  --active-bg: #e3e3e3;
+  --shadow: 0 2px 12px rgba(0,0,0,0.08);
+  --font: ui-sans-serif, system-ui, -apple-system, sans-serif;
+}
+html, body { height: 100%; overflow: hidden; }
+body { font-family: var(--font); background: var(--bg); color: var(--text-primary); display: flex; font-size: 15px; line-height: 1.6; }
+#sidebar { width: var(--sidebar-w); min-width: var(--sidebar-w); height: 100vh; background: var(--sidebar-bg); border-right: 1px solid var(--sidebar-border); display: flex; flex-direction: column; overflow: hidden; }
+#sidebar-header { padding: 14px 10px 8px; }
+#new-chat-btn { width: 100%; display: flex; align-items: center; gap: 8px; padding: 9px 12px; border: 1px solid var(--sidebar-border); border-radius: 8px; background: var(--bg); color: var(--text-primary); font-size: 14px; font-weight: 500; cursor: pointer; transition: background .15s; font-family: var(--font); }
+#new-chat-btn:hover { background: var(--hover-bg); }
+#sessions-list { flex: 1; overflow-y: auto; padding: 4px 8px 16px; }
+#sessions-list::-webkit-scrollbar { width: 4px; }
+#sessions-list::-webkit-scrollbar-thumb { background: #d1d1d1; border-radius: 4px; }
+.section-label { font-size: 11px; font-weight: 600; color: var(--text-muted); text-transform: uppercase; letter-spacing: .06em; padding: 10px 10px 4px; }
+.session-item { display: flex; align-items: center; padding: 8px 10px; border-radius: 8px; cursor: pointer; transition: background .12s; gap: 8px; user-select: none; }
+.session-item:hover { background: var(--hover-bg); }
+.session-item.active { background: var(--active-bg); }
+.s-info { flex: 1; min-width: 0; }
+.s-title { font-size: 13.5px; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+.s-time { font-size: 11px; color: var(--text-muted); }
+.del-btn { display: none; background: none; border: none; cursor: pointer; color: var(--text-muted); padding: 3px 5px; border-radius: 4px; font-size: 13px; line-height: 1; }
+.session-item:hover .del-btn { display: block; }
+.del-btn:hover { color: #e53e3e; background: #fff0f0; }
+#sidebar-footer { padding: 12px; border-top: 1px solid var(--sidebar-border); }
+.app-label { font-size: 12px; color: var(--text-muted); display: flex; align-items: center; gap: 6px; }
+.dot { width: 7px; height: 7px; border-radius: 50%; background: var(--accent); display: inline-block; }
+#main { flex: 1; display: flex; flex-direction: column; overflow: hidden; }
+#topbar { height: 52px; display: flex; align-items: center; padding: 0 20px; border-bottom: 1px solid var(--sidebar-border); gap: 12px; flex-shrink: 0; }
+#topbar-title { font-size: 15px; font-weight: 500; }
+.spacer { flex: 1; }
+#clear-btn { display: flex; align-items: center; gap: 6px; padding: 6px 12px; border-radius: 7px; border: 1px solid var(--input-border); background: white; font-size: 13px; color: var(--text-secondary); cursor: pointer; transition: background .12s; font-family: var(--font); }
+#clear-btn:hover { background: var(--hover-bg); }
+#messages { flex: 1; overflow-y: auto; padding: 20px 0 8px; }
+#messages::-webkit-scrollbar { width: 6px; }
+#messages::-webkit-scrollbar-thumb { background: #d1d1d1; border-radius: 4px; }
+.msg-wrap { max-width: 760px; margin: 0 auto; padding: 0 20px; }
+.msg-row { display: flex; padding: 6px 0; animation: fadeUp .22s ease both; }
+@keyframes fadeUp { from { opacity:0; transform:translateY(7px); } to { opacity:1; transform:translateY(0); } }
+.msg-row.user { flex-direction: row-reverse; }
+.avatar { width: 30px; height: 30px; border-radius: 50%; display: flex; align-items: center; justify-content: center; font-size: 13px; font-weight: 700; flex-shrink: 0; margin-top: 3px; }
+.msg-row.user .avatar { background: #19c37d; color: #fff; margin-left: 10px; }
+.msg-row.assistant .avatar { background: #7c3aed; color: #fff; margin-right: 10px; }
+.bubble-col { display: flex; flex-direction: column; max-width: calc(100% - 46px); }
+.msg-row.user .bubble-col { align-items: flex-end; }
+.bubble { padding: 10px 14px; border-radius: 14px; font-size: 14.5px; line-height: 1.65; word-break: break-word; }
+.msg-row.user .bubble { background: var(--user-bubble); border-radius: 14px 4px 14px 14px; }
+.msg-row.assistant .bubble { background: #fff; border: 1px solid var(--sidebar-border); border-radius: 4px 14px 14px 14px; }
+.bubble p { margin: 0 0 .5em; } .bubble p:last-child { margin-bottom: 0; }
+.bubble strong { font-weight: 600; } .bubble em { font-style: italic; }
+.bubble code { font-family: ui-monospace, monospace; font-size: 13px; background: #f0f0f0; padding: 1px 5px; border-radius: 4px; }
+.bubble pre { background: #1e1e2e; color: #cdd6f4; border-radius: 8px; padding: 12px 14px; overflow-x: auto; margin: 8px 0; font-size: 13px; }
+.bubble pre code { background: none; padding: 0; color: inherit; }
+.bubble table { border-collapse: collapse; width: 100%; margin: 8px 0; font-size: 13.5px; }
+.bubble th, .bubble td { border: 1px solid var(--input-border); padding: 6px 10px; text-align: left; }
+.bubble th { background: #f4f4f4; font-weight: 600; }
+.bubble ul, .bubble ol { padding-left: 20px; margin: .4em 0; }
+.bubble li { margin: .2em 0; }
+.bubble h2 { font-size: 15px; font-weight: 600; margin: .6em 0 .3em; }
+.bubble h3 { font-size: 14px; font-weight: 600; margin: .5em 0 .25em; }
+.bubble hr { border: none; border-top: 1px solid var(--sidebar-border); margin: 8px 0; }
+.msg-meta { font-size: 11px; color: var(--text-muted); margin-top: 3px; padding: 0 2px; }
+.typing-dots { display: flex; align-items: center; gap: 4px; padding: 4px 2px; }
+.typing-dots span { width: 7px; height: 7px; border-radius: 50%; background: #bbb; animation: blink 1.2s infinite; }
+.typing-dots span:nth-child(2) { animation-delay: .2s; }
+.typing-dots span:nth-child(3) { animation-delay: .4s; }
+@keyframes blink { 0%,80%,100% { opacity:.25; transform:scale(.8); } 40% { opacity:1; transform:scale(1); } }
+#empty-state { display: flex; flex-direction: column; align-items: center; justify-content: center; height: 100%; gap: 14px; user-select: none; }
+.es-icon { width: 54px; height: 54px; background: var(--accent); border-radius: 16px; display: flex; align-items: center; justify-content: center; }
+#empty-state h2 { font-size: 20px; font-weight: 600; }
+#empty-state p { font-size: 14px; color: var(--text-secondary); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; margin-top: 6px; justify-content: center; max-width: 500px; }
+.chip { padding: 7px 14px; border: 1px solid var(--input-border); border-radius: 20px; font-size: 13px; color: var(--text-secondary); cursor: pointer; background: white; transition: background .12s; font-family: var(--font); }
+.chip:hover { background: var(--hover-bg); }
+#input-area { padding: 10px 20px 18px; flex-shrink: 0; max-width: 760px; width: 100%; margin: 0 auto; }
+#input-box { display: flex; align-items: flex-end; border: 1px solid var(--input-border); border-radius: 14px; background: #fff; box-shadow: var(--shadow); padding: 10px 12px; transition: border-color .15s, box-shadow .15s; }
+#input-box:focus-within { border-color: #aaa; box-shadow: 0 2px 16px rgba(0,0,0,0.12); }
+#user-input { flex: 1; border: none; outline: none; resize: none; font-size: 15px; font-family: var(--font); color: var(--text-primary); background: transparent; min-height: 24px; max-height: 180px; line-height: 1.5; overflow-y: auto; }
+#user-input::placeholder { color: var(--text-muted); }
+#send-btn { width: 34px; height: 34px; border-radius: 8px; border: none; background: var(--accent); color: white; cursor: pointer; display: flex; align-items: center; justify-content: center; flex-shrink: 0; transition: background .15s, transform .1s; margin-left: 8px; }
+#send-btn:hover { background: var(--accent-hover); }
+#send-btn:active { transform: scale(.93); }
+#send-btn:disabled { background: #c5c5c5; cursor: not-allowed; }
+#input-hint { font-size: 11.5px; color: var(--text-muted); text-align: center; margin-top: 7px; }
+</style>
+</head>
+<body>
+
+<!-- SIDEBAR -->
+<div id="sidebar">
+  <div id="sidebar-header">
+    <button id="new-chat-btn" onclick="newChat()">
+      <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>
+      新建对话
+    </button>
+  </div>
+  <div id="sessions-list">
+    <div class="section-label">历史对话</div>
+  </div>
+  <div id="sidebar-footer">
+    <div class="app-label">
+      <span class="dot"></span>
+      金蝶 · 智能问答系统
+    </div>
+  </div>
+</div>
+
+<!-- MAIN -->
+<div id="main">
+  <div id="topbar">
+    <span id="topbar-title">金蝶智能问答</span>
+    <span class="spacer"></span>
+    <button id="clear-btn" onclick="clearSession()">
+      <svg width="13" height="13" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.95"/></svg>
+      清空记忆
+    </button>
+  </div>
+
+  <div id="messages">
+    <div id="empty-state">
+      <div class="es-icon">
+        <svg width="26" height="26" fill="none" stroke="white" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+      </div>
+      <h2>金蝶智能问答</h2>
+      <p>基于 DeepSeek + LangChain4j，实时查询金蝶 ERP 数据</p>
+      <div class="chips">
+        <button class="chip" onclick="useChip(this)">腰托在哪个仓库？</button>
+        <button class="chip" onclick="useChip(this)">查询近期采购订单</button>
+        <button class="chip" onclick="useChip(this)">库存不足的物料有哪些？</button>
+        <button class="chip" onclick="useChip(this)">查看所有供应商</button>
+      </div>
+    </div>
+  </div>
+
+  <div id="input-area">
+    <div id="input-box">
+      <textarea id="user-input" rows="1" placeholder="向金蝶ERP提问，例如：腰托的库存是多少？" onkeydown="handleKey(event)" oninput="autoResize(this)"></textarea>
+      <button id="send-btn" onclick="sendMessage()" title="发送 (Enter)">
+        <svg width="16" height="16" fill="none" stroke="white" stroke-width="2.3" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+    <div id="input-hint">Enter 发送 &nbsp;·&nbsp; Shift+Enter 换行</div>
+  </div>
+</div>
+
+<!-- JS PLACEHOLDER -->
+<script>
+let currentSessionId = null;
+
+window.onload = async () => {
+  await loadSessions();
+  const first = document.querySelector('.session-item');
+  if (first) first.click();
+};
+
+// ── Session list ──
+async function loadSessions() {
+  try {
+    const res = await fetch('/api/sessions');
+    const list = await res.json();
+    renderSessionList(list);
+  } catch(e) { console.error('加载会话失败', e); }
+}
+
+function renderSessionList(list) {
+  const container = document.getElementById('sessions-list');
+  container.querySelectorAll('.session-item').forEach(el => el.remove());
+  const tip = container.querySelector('.no-tip');
+  if (list.length === 0) {
+    if (!tip) {
+      const d = document.createElement('div');
+      d.className = 'no-tip';
+      d.style.cssText = 'text-align:center;color:#acacbe;font-size:13px;padding:20px 10px;';
+      d.textContent = '暂无历史对话';
+      container.appendChild(d);
+    }
+    return;
+  }
+  if (tip) tip.remove();
+  list.forEach(s => {
+    const item = document.createElement('div');
+    item.className = 'session-item' + (s.id === currentSessionId ? ' active' : '');
+    item.dataset.id = s.id;
+    item.innerHTML =
+      '<div class="s-info">' +
+        '<div class="s-title">' + escHtml(s.title) + '</div>' +
+        '<div class="s-time">' + escHtml(s.createdAt) + '</div>' +
+      '</div>' +
+      '<button class="del-btn" title="删除" onclick="deleteSession(event,&apos;' + s.id + '&apos;)">&#10005;</button>';
+    item.addEventListener('click', (e) => {
+      if (e.target.classList.contains('del-btn')) return;
+      switchSession(s.id, s.title);
+    });
+    container.appendChild(item);
+  });
+}
+
+async function newChat() {
+  const res = await fetch('/api/sessions', { method: 'POST' });
+  const data = await res.json();
+  currentSessionId = data.id;
+  showEmptyState();
+  document.getElementById('topbar-title').textContent = '新对话';
+  await loadSessions();
+  highlightActive();
+}
+
+async function switchSession(id, title) {
+  currentSessionId = id;
+  document.getElementById('topbar-title').textContent = title;
+  highlightActive();
+  const res = await fetch('/api/sessions/' + id + '/messages');
+  const msgs = await res.json();
+  renderMessages(msgs);
+}
+
+async function deleteSession(e, id) {
+  e.stopPropagation();
+  await fetch('/api/sessions/' + id, { method: 'DELETE' });
+  if (currentSessionId === id) {
+    currentSessionId = null;
+    showEmptyState();
+    document.getElementById('topbar-title').textContent = '金蝶智能问答';
+  }
+  await loadSessions();
+}
+
+function highlightActive() {
+  document.querySelectorAll('.session-item').forEach(el => {
+    el.classList.toggle('active', el.dataset.id === currentSessionId);
+  });
+}
+
+// ── Messages ──
+function renderMessages(msgs) {
+  const box = document.getElementById('messages');
+  const es = document.getElementById('empty-state');
+  if (es) es.style.display = 'none';
+  box.innerHTML = '';
+  if (msgs.length === 0) { showEmptyState(); return; }
+  msgs.forEach(m => appendMessage(m.role, m.content, m.elapsedMs, m.toolCallCount, false));
+  scrollToBottom();
+}
+
+function appendMessage(role, content, elapsedMs, toolCalls, animate) {
+  const box = document.getElementById('messages');
+  const es = document.getElementById('empty-state');
+  if (es) es.style.display = 'none';
+
+  const wrap = document.createElement('div');
+  wrap.className = 'msg-wrap';
+
+  const row = document.createElement('div');
+  row.className = 'msg-row ' + role;
+  if (animate) row.style.animation = 'fadeUp .22s ease both';
+
+  const avatarText = role === 'user' ? 'U' : 'AI';
+  const av = document.createElement('div');
+  av.className = 'avatar';
+  av.textContent = avatarText;
+
+  const col = document.createElement('div');
+  col.className = 'bubble-col';
+
+  const bubble = document.createElement('div');
+  bubble.className = 'bubble';
+  bubble.innerHTML = renderMarkdown(content);
+
+  col.appendChild(bubble);
+
+  if (role === 'assistant' && (elapsedMs > 0 || toolCalls > 0)) {
+    const meta = document.createElement('div');
+    meta.className = 'msg-meta';
+    const parts = [];
+    if (elapsedMs > 0) parts.push((elapsedMs / 1000).toFixed(1) + 's');
+    if (toolCalls > 0) parts.push('调用工具 ' + toolCalls + ' 次');
+    meta.textContent = parts.join('  ·  ');
+    col.appendChild(meta);
+  }
+
+  row.appendChild(av);
+  row.appendChild(col);
+  wrap.appendChild(row);
+  box.appendChild(wrap);
+  scrollToBottom();
+}
+
+function showTyping() {
+  const box = document.getElementById('messages');
+  const wrap = document.createElement('div');
+  wrap.className = 'msg-wrap';
+  wrap.id = 'typing-indicator';
+  wrap.innerHTML =
+    '<div class="msg-row assistant">' +
+      '<div class="avatar">AI</div>' +
+      '<div class="bubble-col"><div class="bubble"><div class="typing-dots"><span></span><span></span><span></span></div></div></div>' +
+    '</div>';
+  box.appendChild(wrap);
+  scrollToBottom();
+}
+
+function removeTyping() {
+  const el = document.getElementById('typing-indicator');
+  if (el) el.remove();
+}
+
+// ── Send ──
+async function sendMessage() {
+  const input = document.getElementById('user-input');
+  const text = input.value.trim();
+  if (!text) return;
+  if (!currentSessionId) {
+    await newChat();
+  }
+  input.value = '';
+  autoResize(input);
+  setSending(true);
+  appendMessage('user', text, 0, 0, true);
+  showTyping();
+  try {
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: { 'Content-Type': 'application/json' },
+      body: JSON.stringify({ sessionId: currentSessionId, message: text })
+    });
+    const data = await res.json();
+    removeTyping();
+    if (data.error) {
+      appendMessage('assistant', '错误：' + data.error, 0, 0, true);
+    } else {
+      appendMessage('assistant', data.reply, data.elapsedMs, data.toolCalls, true);
+      // 更新侧边栏标题
+      if (data.sessionTitle) {
+        document.getElementById('topbar-title').textContent = data.sessionTitle;
+        await loadSessions();
+        highlightActive();
+      }
+    }
+  } catch(e) {
+    removeTyping();
+    appendMessage('assistant', '请求失败，请检查服务是否正常运行。', 0, 0, true);
+  } finally {
+    setSending(false);
+    input.focus();
+  }
+}
+
+async function clearSession() {
+  if (!currentSessionId) return;
+  await fetch('/api/clear/' + currentSessionId, { method: 'POST' });
+  showEmptyState();
+}
+
+function useChip(btn) {
+  const input = document.getElementById('user-input');
+  input.value = btn.textContent;
+  autoResize(input);
+  input.focus();
+  if (!currentSessionId) newChat().then(() => sendMessage());
+  else sendMessage();
+}
+
+// ── Helpers ──
+function showEmptyState() {
+  const box = document.getElementById('messages');
+  box.innerHTML = '';
+  const es = document.getElementById('empty-state') || createEmptyState();
+  es.style.display = 'flex';
+  box.appendChild(es);
+}
+
+function createEmptyState() {
+  const d = document.createElement('div');
+  d.id = 'empty-state';
+  d.innerHTML =
+    '<div class="es-icon"><svg width="26" height="26" fill="none" stroke="white" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>' +
+    '<h2>金蝶智能问答</h2>' +
+    '<p>基于 DeepSeek + LangChain4j，实时查询金蝶 ERP 数据</p>' +
+    '<div class="chips">' +
+      '<button class="chip" onclick="useChip(this)">腰托在哪个仓库？</button>' +
+      '<button class="chip" onclick="useChip(this)">查询近期采购订单</button>' +
+      '<button class="chip" onclick="useChip(this)">库存不足的物料有哪些？</button>' +
+      '<button class="chip" onclick="useChip(this)">查看所有供应商</button>' +
+    '</div>';
+  return d;
+}
+
+function setSending(v) {
+  document.getElementById('send-btn').disabled = v;
+  document.getElementById('user-input').disabled = v;
+}
+
+function scrollToBottom() {
+  const box = document.getElementById('messages');
+  box.scrollTop = box.scrollHeight;
+}
+
+function handleKey(e) {
+  if (e.key === 'Enter' && !e.shiftKey) { e.preventDefault(); sendMessage(); }
+}
+
+function autoResize(ta) {
+  ta.style.height = 'auto';
+  ta.style.height = Math.min(ta.scrollHeight, 180) + 'px';
+}
+
+function escHtml(s) {
+  return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+}
+
+function renderMarkdown(text) {
+  let s = escHtml(text);
+  // code blocks
+  s = s.replace(/```([\s\S]*?)```/g, '<pre><code>$1</code></pre>');
+  // inline code
+  s = s.replace(/`([^`]+)`/g, '<code>$1</code>');
+  // bold
+  s = s.replace(/\*\*([^*]+)\*\*/g, '<strong>$1</strong>');
+  // italic
+  s = s.replace(/\*([^*]+)\*/g, '<em>$1</em>');
+  // h2 h3
+  s = s.replace(/^### (.+)$/gm, '<h3>$1</h3>');
+  s = s.replace(/^## (.+)$/gm, '<h2>$1</h2>');
+  // hr
+  s = s.replace(/^---$/gm, '<hr>');
+  // unordered list
+  s = s.replace(/^[\-\*] (.+)$/gm, '<li>$1</li>');
+  s = s.replace(/(<li>.*<\/li>)/s, '<ul>$1</ul>');
+  // ordered list
+  s = s.replace(/^\d+\. (.+)$/gm, '<li>$1</li>');
+  // paragraphs (double newline)
+  s = s.split(/\n{2,}/).map(p => {
+    p = p.trim();
+    if (!p) return '';
+    if (/^<(h[23]|hr|ul|ol|pre|li)/.test(p)) return p;
+    return '<p>' + p.replace(/\n/g, '<br>') + '</p>';
+  }).join('');
+  return s;
+}
+</script>
+</body>
+</html>

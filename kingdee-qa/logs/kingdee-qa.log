@@ -1,0 +1,119 @@
+2026-03-13 11:13:35 [INFO] com.kingdee.qa.config.ConfigManager - 配置文件加载成功: application.properties
+2026-03-13 11:13:35 [INFO] com.kingdee.qa.config.ConfigManager - 配置验证通过
+2026-03-13 11:13:35 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统中的单据数据。支持指定表单ID、字段、过滤条件、排序和数量限制。适用于查询采购订单、销售订单、库存、基础资料等所有金蝶单据。
+2026-03-13 11:13:35 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-13 11:13:35 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-13 11:15:27 [INFO] com.kingdee.qa.config.ConfigManager - 配置文件加载成功: application.properties
+2026-03-13 11:15:27 [INFO] com.kingdee.qa.config.ConfigManager - 配置验证通过
+2026-03-13 11:15:27 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统中的单据数据。支持指定表单ID、字段、过滤条件、排序和数量限制。适用于查询采购订单、销售订单、库存、基础资料等所有金蝶单据。
+2026-03-13 11:15:27 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-13 11:15:28 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-13 11:15:43 [INFO] com.kingdee.qa.state.IES - IES 为空，跳过保存
+2026-03-13 12:11:38 [INFO] com.kingdee.qa.config.ConfigManager - 配置文件加载成功: application.properties
+2026-03-13 12:11:38 [INFO] com.kingdee.qa.config.ConfigManager - 配置验证通过
+2026-03-13 12:11:38 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统中的单据数据。支持指定表单ID、字段、过滤条件、排序和数量限制。适用于查询采购订单、销售订单、库存、物料、供应商等所有金蝶单据。当用户提到查询、查找、搜索、获取任何金蝶ERP中的数据时使用此技能。
+2026-03-13 12:11:38 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-13 12:11:39 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-13 12:12:18 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: ������10000158���������
+2026-03-13 12:12:25 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 7553ms，工具调用 0 次
+2026-03-13 12:12:49 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: ������
+2026-03-13 12:12:55 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 5843ms，工具调用 0 次
+2026-03-13 12:13:48 [INFO] com.kingdee.qa.config.ConfigManager - 配置文件加载成功: application.properties
+2026-03-13 12:13:48 [INFO] com.kingdee.qa.config.ConfigManager - 配置验证通过
+2026-03-13 12:13:48 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统中的单据数据。支持指定表单ID、字段、过滤条件、排序和数量限制。适用于查询采购订单、销售订单、库存、物料、供应商等所有金蝶单据。当用户提到查询、查找、搜索、获取任何金蝶ERP中的数据时使用此技能。
+2026-03-13 12:13:48 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-13 12:13:48 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-13 12:14:01 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: �������
+2026-03-13 12:14:06 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 5392ms，工具调用 0 次
+2026-03-13 12:20:04 [INFO] com.kingdee.qa.config.ConfigManager - 配置文件加载成功: application.properties
+2026-03-13 12:20:04 [INFO] com.kingdee.qa.config.ConfigManager - 配置验证通过
+2026-03-13 12:20:04 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统即时库存数据。支持按物料名称、物料编码、仓库名称等条件查询库存数量和仓库信息。
+2026-03-13 12:20:04 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-13 12:20:05 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-13 12:20:14 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2295 字符
+2026-03-13 12:20:14 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: �������
+2026-03-13 12:20:21 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶查询] FormId=STK_Inventory, Fields=FMATERIALID.FName,FMATERIALID.FNumber,FStockId.FName,FBaseQty, Filter=, Limit=500
+2026-03-13 12:20:22 [ERROR] c.kingdee.qa.skill.KingdeeQuerySkill - 解析金蝶响应失败: java.lang.IllegalStateException: Unexpected token: END_ARRAY
+2026-03-13 12:20:29 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶查询] FormId=STK_Inventory, Fields=FMATERIALID.FName,FMATERIALID.FNumber,FStockId.FName,FBaseQty, Filter=, Limit=100
+2026-03-13 12:20:29 [ERROR] c.kingdee.qa.skill.KingdeeQuerySkill - 解析金蝶响应失败: java.lang.IllegalStateException: Unexpected token: END_ARRAY
+2026-03-13 12:35:18 [INFO] com.kingdee.qa.config.ConfigManager - 配置文件加载成功: application.properties
+2026-03-13 12:35:18 [INFO] com.kingdee.qa.config.ConfigManager - 配置验证通过
+2026-03-13 12:35:18 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统即时库存数据。支持按物料名称、物料编码、仓库名称等条件查询库存数量和仓库信息。
+2026-03-13 12:35:18 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-13 12:35:19 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-13 12:35:21 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2295 字符
+2026-03-13 12:35:21 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: �������
+2026-03-13 12:35:29 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶查询] FormId=STK_Inventory, Fields=FMATERIALID.FName,FMATERIALID.FNumber,FStockId.FName,FBaseQty, Filter=, Limit=100
+2026-03-13 12:35:29 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶原始响应] [[{"Result":{"ResponseStatus":{"ErrorCode":500,"IsSuccess":false,"Errors":[{"FieldName":null,"Message":"会话信息已丢失，请重新登录","DIndex":0}],"SuccessEntitys":[],"SuccessMessages":[],"MsgCode":1}}}]]
+2026-03-13 12:35:36 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 14778ms，工具调用 0 次
+2026-03-13 12:44:23 [INFO] com.kingdee.qa.config.ConfigManager - 配置文件加载成功: application.properties
+2026-03-13 12:44:23 [INFO] com.kingdee.qa.config.ConfigManager - 配置验证通过
+2026-03-13 12:44:24 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统即时库存数据。支持按物料名称、物料编码、仓库名称、仓库编码等多种条件查询库存数量和仓库信息。
+2026-03-13 12:44:24 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-13 12:44:24 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-13 12:44:24 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=a77caf8f-f79a-450d-86dc-36c230937a7a
+2026-03-13 12:44:24 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-13 12:44:41 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2905 字符
+2026-03-13 12:44:41 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: �������
+2026-03-13 12:44:46 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 5300ms，工具调用 0 次
+2026-03-13 12:45:35 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: �������
+2026-03-13 12:45:40 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 4892ms，工具调用 0 次
+2026-03-13 12:51:04 [INFO] com.kingdee.qa.config.ConfigManager - 配置文件加载成功: application.properties
+2026-03-13 12:51:04 [INFO] com.kingdee.qa.config.ConfigManager - 配置验证通过
+2026-03-13 12:51:04 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统即时库存数据。支持按物料名称、物料编码、仓库名称、仓库编码等多种条件查询库存数量和仓库信息。
+2026-03-13 12:51:04 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-13 12:51:04 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-13 12:51:05 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=d05bf4dc-be7a-4af0-bf59-aab51adc1c0a
+2026-03-13 12:51:05 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-13 12:51:15 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2905 字符
+2026-03-13 12:51:15 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: ppppppp
+2026-03-13 12:51:24 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 8809ms，工具调用 0 次
+2026-03-13 13:48:37 [INFO] com.kingdee.qa.config.ConfigManager - 配置文件加载成功: application.properties
+2026-03-13 13:48:37 [INFO] com.kingdee.qa.config.ConfigManager - 配置验证通过
+2026-03-13 13:48:37 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统即时库存数据。支持按物料名称、物料编码、仓库名称、仓库编码等多种条件查询库存数量和仓库信息。
+2026-03-13 13:48:37 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-13 13:48:37 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-13 13:48:38 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=e3c8099e-2959-4178-b2ae-c34833ed153f
+2026-03-13 13:48:38 [INFO] com.kingdee.qa.web.WebServer - WebServer 初始化完成，端口: 8080
+2026-03-13 13:48:48 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-13 13:48:48 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2905 字符
+2026-03-13 13:48:48 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库？
+2026-03-13 13:48:57 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶查询] FormId=STK_Inventory, Fields=FMATERIALID.FName,FMATERIALID.FNumber,FStockId.FName,FStockId.FNumber,FBaseQty, Filter=FMATERIALID.FName like '%腰托%', Limit=100
+2026-03-13 13:48:57 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶原始响应] [["腰托气袋安装板","10000941","1F_呆滞料库","CK017",0.0],["HS5腰托气袋T型","10002502","1F_呆滞料库","CK017",0.0],["两气袋腰托阀组","10002033","1F_呆滞料库","CK017",0.0],["气动腰托总成","10000125","1F_成品库","CK015",240.0000000000],["腰托","10000158","1F_成品库","CK015",94.0000000000],["两向气动腰托总成","10000761","1F_成品库","CK015",0.0],["2气袋腰托（低配副驾）","10001671","1F_成品库","CK015",30.0000000000],["两向腰托总成","10002043","1F_成品库","CK015",0.0],["六座中排座椅两气袋腰托总成","10001775","1F_成品库","CK015",0.0],["四向气动腰托总成(带网格)","10002716","1F_成品库","CK015",0.0],["前排腰托系统组件","...
+2026-03-13 13:49:19 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 31556ms，工具调用 0 次
+2026-03-13 14:02:24 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 1F_成品库都有哪些物料
+2026-03-13 14:02:33 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶查询] FormId=STK_Inventory, Fields=FMATERIALID.FName,FMATERIALID.FNumber,FStockId.FName,FStockId.FNumber,FBaseQty, Filter=FStockId.FName like '%1F_成品库%', Limit=200
+2026-03-13 14:02:34 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶原始响应] [["四向气动腰托","10000098","1F_成品库","CK015",0.0],["四向气动腰托","10000098","1F_成品库","CK015",0.0],["四向气动腰托","10000098","1F_成品库","CK015",0.0],["四向气动腰托","10000098","1F_成品库","CK015",0.0],["四向气动腰托","10000098","1F_成品库","CK015",948.0000000000],["气动腰托总成","10000125","1F_成品库","CK015",240.0000000000],["气动腰托总成","10000125","1F_成品库","CK015",372.0000000000],["气动腰托总成","10000143","1F_成品库","CK015",0.0],["气动腰托总成","10000143","1F_成品库","CK015",0.0],["气动腰托总成","10000143","1F_成品库","CK015",0.0],["气动腰托总成","10000143","1F_成品库","CK015...
+2026-03-13 14:03:00 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 35314ms，工具调用 0 次
+2026-03-13 14:10:42 [INFO] com.kingdee.qa.config.ConfigManager - 配置文件加载成功: application.properties
+2026-03-13 14:10:42 [INFO] com.kingdee.qa.config.ConfigManager - 配置验证通过
+2026-03-13 14:10:42 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统即时库存数据。支持按物料名称、物料编码、仓库名称、仓库编码等多种条件查询库存数量和仓库信息。
+2026-03-13 14:10:42 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-13 14:10:43 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-13 14:10:44 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=0a1393d3-7aa7-4e11-8215-96fb601d1c23
+2026-03-13 14:10:44 [INFO] com.kingdee.qa.web.WebServer - WebServer 初始化完成，端口: 8080
+2026-03-13 14:10:59 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-13 14:10:59 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2905 字符
+2026-03-13 14:10:59 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 查看所有供应商
+2026-03-13 14:11:07 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 7611ms，工具调用 0 次
+2026-03-13 14:12:28 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 好的，那我要看看1F_成品仓都有什么库存
+2026-03-13 14:12:36 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶查询] FormId=STK_Inventory, Fields=FMATERIALID.FName,FMATERIALID.FNumber,FStockId.FName,FStockId.FNumber,FBaseQty, Filter=FStockId.FName like '%1F_成品仓%', Limit=200
+2026-03-13 14:12:37 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶原始响应] []
+2026-03-13 14:12:47 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶查询] FormId=STK_Inventory, Fields=FStockId.FName,FStockId.FNumber, Filter=, Limit=100
+2026-03-13 14:12:47 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶原始响应] [["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_包材库","CK016"],["1F_...
+2026-03-13 14:12:58 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶查询] FormId=STK_Inventory, Fields=FMATERIALID.FName,FMATERIALID.FNumber,FStockId.FName,FStockId.FNumber,FBaseQty, Filter=FStockId.FName like '%1F_成品库%', Limit=200
+2026-03-13 14:12:58 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶原始响应] [["四向气动腰托","10000098","1F_成品库","CK015",0.0],["四向气动腰托","10000098","1F_成品库","CK015",0.0],["四向气动腰托","10000098","1F_成品库","CK015",0.0],["四向气动腰托","10000098","1F_成品库","CK015",0.0],["四向气动腰托","10000098","1F_成品库","CK015",948.0000000000],["气动腰托总成","10000125","1F_成品库","CK015",240.0000000000],["气动腰托总成","10000125","1F_成品库","CK015",372.0000000000],["气动腰托总成","10000143","1F_成品库","CK015",0.0],["气动腰托总成","10000143","1F_成品库","CK015",0.0],["气动腰托总成","10000143","1F_成品库","CK015",0.0],["气动腰托总成","10000143","1F_成品库","CK015...
+2026-03-13 14:13:22 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 53981ms，工具调用 0 次
+2026-03-13 14:16:05 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库
+2026-03-13 14:16:15 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶查询] FormId=STK_Inventory, Fields=FMATERIALID.FName,FMATERIALID.FNumber,FStockId.FName,FStockId.FNumber,FBaseQty, Filter=FMATERIALID.FName like '%腰托%', Limit=200
+2026-03-13 14:16:15 [INFO] c.kingdee.qa.skill.KingdeeQuerySkill - [金蝶原始响应] [["气动腰托总成","10000143","1F_成品库","CK015",0.0],["气动腰托总成","10000143","1F_成品库","CK015",0.0],["四向气动腰托","10000154","1F_成品库","CK015",46.0000000000],["四向气动腰托","10000176","1F_成品库","CK015",0.0],["四向气动腰托","10000176","1F_成品库","CK015",0.0],["四向气动腰托","10000176","1F_成品库","CK015",0.0],["四向气动腰托","10000176","1F_成品库","CK015",0.0],["四向气动腰托","10000176","1F_成品库","CK015",0.0],["四向气动腰托","10000176","1F_成品库","CK015",0.0],["两向气动腰托总成(含网格)","10000643","1F_成品库","CK015",0.0],["两向气动腰托总成(含网格)","10000643","1F_成品库","CK015",0.0],["...
+2026-03-13 14:16:37 [INFO] com.kingdee.qa.agent.Agent - 问题处理完成，耗时 32780ms，工具调用 0 次
+2026-03-13 17:26:11 [INFO] com.kingdee.qa.config.ConfigManager - 配置文件加载成功: application.properties
+2026-03-13 17:26:11 [INFO] com.kingdee.qa.config.ConfigManager - 配置验证通过
+2026-03-13 17:26:11 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统即时库存数据。支持按物料名称、物料编码、仓库名称、仓库编码等多种条件查询库存数量和仓库信息。
+2026-03-13 17:26:11 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-13 17:26:12 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-13 17:26:12 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=fad1329b-6186-4ec9-95c9-71b5ec7b730d
+2026-03-13 17:26:12 [INFO] com.kingdee.qa.web.WebServer - WebServer 初始化完成，端口: 8080
+2026-03-13 17:26:26 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-13 17:26:27 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat

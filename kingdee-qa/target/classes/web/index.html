@@ -1,0 +1,759 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate">
+<meta http-equiv="Pragma" content="no-cache">
+<meta http-equiv="Expires" content="0">
+<title>金蝶智能问答</title>
+<style>
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0;}
+:root{
+  --sidebar-w:260px;--bg:#f7f6f3;--sidebar-bg:#efefed;
+  --sidebar-border:#e0dedd;--text-primary:#1a1915;
+  --text-secondary:#6b6860;--text-muted:#a8a49e;
+  --accent:#d97706;--accent-hover:#b45309;
+  --user-bubble:#1a1915;--user-text:#f7f6f3;--ai-bubble:#fff;
+  --input-border:#d4d0ca;--hover-bg:#e5e3df;--active-bg:#dbd9d4;
+  --font-ui:'Inter',system-ui,sans-serif;
+  --font-mono:'JetBrains Mono',monospace;
+}
+html,body{height:100%;overflow:hidden;}
+body{font-family:var(--font-ui);background:var(--bg);color:var(--text-primary);display:flex;font-size:15px;line-height:1.6;}
+#sidebar{width:var(--sidebar-w);min-width:var(--sidebar-w);height:100vh;background:var(--sidebar-bg);border-right:1px solid var(--sidebar-border);display:flex;flex-direction:column;overflow:hidden;}
+#sidebar-header{padding:14px 10px 8px;}
+#new-chat-btn{width:100%;display:flex;align-items:center;gap:8px;padding:9px 12px;border:1px solid var(--sidebar-border);border-radius:8px;background:var(--bg);color:var(--text-primary);font-size:13.5px;font-weight:500;cursor:pointer;transition:background .15s;font-family:var(--font-ui);}
+#new-chat-btn:hover{background:var(--hover-bg);}
+#sessions-list{flex:1;overflow-y:auto;padding:4px 8px 16px;}
+#sessions-list::-webkit-scrollbar{width:4px;}
+#sessions-list::-webkit-scrollbar-thumb{background:#ccc;border-radius:4px;}
+.section-label{font-size:10.5px;font-weight:600;color:var(--text-muted);text-transform:uppercase;letter-spacing:.08em;padding:10px 10px 4px;}
+.session-item{display:flex;align-items:center;padding:8px 10px;border-radius:8px;cursor:pointer;transition:background .12s;gap:8px;user-select:none;}
+.session-item:hover{background:var(--hover-bg);}
+.session-item.active{background:var(--active-bg);}
+.s-info{flex:1;min-width:0;}
+.s-title{font-size:13px;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+.s-time{font-size:11px;color:var(--text-muted);margin-top:1px;}
+.del-btn{display:none;background:none;border:none;cursor:pointer;color:var(--text-muted);padding:3px 5px;border-radius:4px;font-size:13px;line-height:1;}
+.session-item:hover .del-btn{display:block;}
+.del-btn:hover{color:#dc2626;background:#fee2e2;}
+#sidebar-footer{padding:12px;border-top:1px solid var(--sidebar-border);}
+.app-label{font-size:11.5px;color:var(--text-muted);display:flex;align-items:center;gap:6px;}
+.dot{width:7px;height:7px;border-radius:50%;background:var(--accent);display:inline-block;animation:pulse 2s infinite;}
+@keyframes pulse{0%,100%{opacity:1;}50%{opacity:.5;}}
+#main{flex:1;display:flex;flex-direction:column;overflow:hidden;}
+#topbar{height:52px;display:flex;align-items:center;padding:0 20px;border-bottom:1px solid var(--sidebar-border);gap:10px;flex-shrink:0;background:var(--bg);}
+#topbar-title{font-size:15px;font-weight:600;}
+.spacer{flex:1;}
+#clear-btn{display:flex;align-items:center;gap:6px;padding:6px 12px;border-radius:7px;border:1px solid var(--input-border);background:transparent;font-size:12.5px;color:var(--text-secondary);cursor:pointer;transition:background .12s;font-family:var(--font-ui);}
+#clear-btn:hover{background:var(--hover-bg);}
+#nomem-btn{display:flex;align-items:center;gap:6px;padding:6px 12px;border-radius:7px;border:1.5px solid var(--input-border);background:transparent;font-size:12.5px;color:var(--text-secondary);cursor:pointer;transition:all .15s;font-family:var(--font-ui);white-space:nowrap;}
+#nomem-btn:hover{background:var(--hover-bg);}
+#nomem-btn.active{background:#fef3c7;border-color:#f59e0b;color:#b45309;}
+.nomem-dot{width:7px;height:7px;border-radius:50%;background:#cbd5e1;flex-shrink:0;transition:background .2s;}
+#nomem-btn.active .nomem-dot{background:#f59e0b;}
+#login-btn{display:flex;align-items:center;gap:7px;padding:5px 13px 5px 11px;border-radius:8px;border:1.5px solid var(--input-border);background:var(--bg);font-size:12.5px;font-weight:500;color:var(--text-secondary);cursor:pointer;transition:all .18s;font-family:var(--font-ui);white-space:nowrap;flex-shrink:0;}
+#login-btn:hover{background:var(--hover-bg);border-color:#bbb7b0;color:var(--text-primary);}
+#login-btn.logged-in{border-color:#86efac;background:#f0fdf4;color:#15803d;}
+#login-btn.logged-in:hover{background:#dcfce7;}
+.login-dot{width:7px;height:7px;border-radius:50%;background:#cbd5e1;transition:background .25s;flex-shrink:0;}
+#login-btn.logged-in .login-dot{background:#22c55e;animation:pulse 2s infinite;}
+#messages{flex:1;overflow-y:auto;padding:24px 0 8px;}
+#messages::-webkit-scrollbar{width:6px;}
+#messages::-webkit-scrollbar-thumb{background:#ccc;border-radius:4px;}
+.msg-wrap{max-width:780px;margin:0 auto;padding:0 24px;}
+.msg-row{display:flex;padding:5px 0;animation:fadeUp .2s ease both;}
+@keyframes fadeUp{from{opacity:0;transform:translateY(6px);}to{opacity:1;transform:translateY(0);}}
+.msg-row.user{flex-direction:row-reverse;}
+.avatar{width:28px;height:28px;border-radius:50%;display:flex;align-items:center;justify-content:center;font-size:11px;font-weight:700;flex-shrink:0;margin-top:4px;}
+.msg-row.user .avatar{background:var(--user-bubble);color:var(--user-text);margin-left:10px;}
+.msg-row.assistant .avatar{background:var(--accent);color:#fff;margin-right:10px;}
+.bubble-col{display:flex;flex-direction:column;max-width:calc(100% - 44px);}
+.msg-row.user .bubble-col{align-items:flex-end;}
+.bubble{padding:10px 14px;border-radius:14px;font-size:14.5px;line-height:1.7;word-break:break-word;}
+.msg-row.user .bubble{background:var(--user-bubble);color:var(--user-text);border-radius:14px 4px 14px 14px;}
+.msg-row.assistant .bubble{background:var(--ai-bubble);border:1px solid var(--sidebar-border);border-radius:4px 14px 14px 14px;box-shadow:0 1px 4px rgba(0,0,0,.04);}
+.bubble p{margin:0 0 .5em;}.bubble p:last-child{margin-bottom:0;}
+.bubble strong{font-weight:600;}
+.bubble code{font-family:var(--font-mono);font-size:12.5px;background:#f0ede8;padding:1px 5px;border-radius:4px;}
+.bubble pre{background:#1c1917;color:#e7e5e4;border-radius:8px;padding:12px 14px;overflow-x:auto;margin:8px 0;font-size:12.5px;}
+.bubble pre code{background:none;padding:0;color:inherit;}
+.bubble table{border-collapse:collapse;width:100%;margin:8px 0;font-size:13px;}
+.bubble th,.bubble td{border:1px solid var(--input-border);padding:6px 10px;text-align:left;}
+.bubble th{background:#f0ede8;font-weight:600;}
+.bubble ul,.bubble ol{padding-left:20px;margin:.4em 0;}
+.bubble li{margin:.2em 0;}
+.bubble h2{font-size:15px;font-weight:600;margin:.6em 0 .3em;}
+.bubble h3{font-size:14px;font-weight:600;margin:.5em 0 .25em;}
+.bubble hr{border:none;border-top:1px solid var(--sidebar-border);margin:8px 0;}
+.bubble-img{max-width:180px;max-height:120px;border-radius:8px;margin-bottom:6px;display:block;object-fit:cover;opacity:.85;}
+.msg-stats{margin-top:6px;padding:7px 10px;background:#f0ede8;border-radius:8px;border:1px solid var(--sidebar-border);font-size:11.5px;color:var(--text-secondary);display:flex;flex-wrap:wrap;gap:4px 14px;}
+.stat-item{display:flex;align-items:center;gap:4px;}
+.stat-label{color:var(--text-muted);}
+.stat-value{font-weight:600;color:var(--text-primary);font-family:var(--font-mono);font-size:11px;}
+.stat-sep{color:var(--sidebar-border);}
+.typing-dots{display:flex;align-items:center;gap:4px;padding:4px 2px;}
+.typing-dots span{width:6px;height:6px;border-radius:50%;background:#bbb;animation:blink 1.2s infinite;}
+.typing-dots span:nth-child(2){animation-delay:.2s;}
+.typing-dots span:nth-child(3){animation-delay:.4s;}
+.stream-cursor{display:inline-block;width:2px;height:1em;background:var(--accent);margin-left:2px;vertical-align:text-bottom;animation:blink-cursor .7s step-end infinite;}@keyframes blink-cursor{0%,100%{opacity:1;}50%{opacity:0;}}.thinking-indicator{display:flex;align-items:center;gap:6px;padding:4px 2px;}.thinking-dot{width:7px;height:7px;border-radius:50%;background:#bbb;animation:blink 1.2s infinite;}.thinking-dot:nth-child(2){animation-delay:.2s;}.thinking-dot:nth-child(3){animation-delay:.4s;}.thinking-text{font-size:13px;color:var(--text-muted);margin-left:4px;}
+@keyframes blink{0%,80%,100%{opacity:.25;transform:scale(.8);}40%{opacity:1;transform:scale(1);}}
+#empty-state{display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:16px;user-select:none;}
+.es-icon{width:56px;height:56px;background:var(--accent);border-radius:16px;display:flex;align-items:center;justify-content:center;}
+#empty-state h2{font-size:22px;font-weight:700;letter-spacing:-.01em;}
+#empty-state p{font-size:14px;color:var(--text-secondary);}
+.chips{display:flex;flex-wrap:wrap;gap:8px;justify-content:center;max-width:520px;margin-top:4px;}
+.chip{padding:7px 14px;border:1px solid var(--input-border);border-radius:20px;font-size:13px;color:var(--text-secondary);cursor:pointer;background:var(--bg);transition:background .12s,border-color .12s;font-family:var(--font-ui);}
+.chip:hover{background:var(--hover-bg);border-color:#c5c0b8;}
+#input-area{padding:10px 24px 18px;flex-shrink:0;max-width:780px;width:100%;margin:0 auto;}
+#image-preview-bar{display:none;align-items:center;gap:8px;padding:6px 2px 8px;flex-wrap:wrap;}
+#image-preview-bar.has-images{display:flex;}
+.img-thumb-wrap{position:relative;width:64px;height:64px;border-radius:8px;overflow:hidden;border:1.5px solid var(--input-border);flex-shrink:0;background:#f0ede8;}
+.img-thumb-wrap img{width:100%;height:100%;object-fit:cover;display:block;}
+.img-remove-btn{position:absolute;top:2px;right:2px;width:18px;height:18px;border-radius:50%;background:rgba(0,0,0,.6);color:#fff;border:none;cursor:pointer;font-size:12px;display:flex;align-items:center;justify-content:center;line-height:1;}
+.ocr-status{position:absolute;bottom:0;left:0;right:0;font-size:9px;text-align:center;padding:2px 0;font-weight:700;}
+.ocr-status.done{background:rgba(21,128,61,.82);color:#fff;}
+.ocr-status.loading{background:rgba(217,119,6,.82);color:#fff;}
+.ocr-status.error{background:rgba(220,38,38,.82);color:#fff;}
+#input-box{display:flex;align-items:flex-end;border:1.5px solid var(--input-border);border-radius:14px;background:#fff;box-shadow:0 2px 8px rgba(0,0,0,.06);padding:10px 12px;transition:border-color .15s,box-shadow .15s;}
+#input-box:focus-within{border-color:var(--accent);box-shadow:0 2px 14px rgba(217,119,6,.12);}
+#user-input{flex:1;border:none;outline:none;resize:none;font-size:15px;font-family:var(--font-ui);color:var(--text-primary);background:transparent;min-height:24px;max-height:180px;line-height:1.5;overflow-y:auto;}
+#user-input::placeholder{color:var(--text-muted);}
+.tool-btn{width:34px;height:34px;border-radius:8px;border:none;background:transparent;color:var(--text-secondary);cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .15s,color .15s;margin-left:4px;}
+.tool-btn:hover{background:var(--hover-bg);color:var(--text-primary);}
+.tool-btn:disabled{opacity:.4;cursor:not-allowed;}
+#mic-btn.recording{background:#fee2e2;color:#dc2626;animation:micPulse 1s ease-in-out infinite;}
+#mic-btn.processing{background:#fef3c7;color:#d97706;}
+@keyframes micPulse{0%,100%{opacity:1;transform:scale(1);}50%{opacity:.7;transform:scale(1.08);}}
+#send-btn{width:34px;height:34px;border-radius:8px;border:none;background:var(--accent);color:#fff;cursor:pointer;display:flex;align-items:center;justify-content:center;flex-shrink:0;transition:background .15s,transform .1s;margin-left:6px;}
+#send-btn:hover{background:var(--accent-hover);}
+#send-btn:active{transform:scale(.93);}
+#send-btn:disabled{background:#d4d0ca;cursor:not-allowed;}
+#input-hint{font-size:11px;color:var(--text-muted);text-align:center;margin-top:6px;}
+#img-file-input{display:none;}
+#not-logged-toast{position:fixed;top:66px;left:50%;transform:translateX(-50%) translateY(-6px);background:#1c1917;color:#fff;border-radius:10px;padding:11px 20px;font-size:13.5px;font-weight:500;box-shadow:0 8px 32px rgba(0,0,0,.25);z-index:2000;opacity:0;pointer-events:none;transition:opacity .22s,transform .22s;display:flex;align-items:center;gap:10px;white-space:nowrap;}
+#not-logged-toast.show{opacity:1;transform:translateX(-50%) translateY(0);pointer-events:all;}
+.toast-login-link{color:#fbbf24;text-decoration:underline;cursor:pointer;font-weight:600;background:none;border:none;font-size:inherit;font-family:inherit;padding:0;}
+#login-overlay{position:fixed;inset:0;background:rgba(15,13,10,.52);backdrop-filter:blur(5px);z-index:1000;display:flex;align-items:center;justify-content:center;opacity:0;pointer-events:none;transition:opacity .2s;}
+#login-overlay.open{opacity:1;pointer-events:all;}
+#login-modal{background:#fff;border-radius:20px;box-shadow:0 28px 72px rgba(0,0,0,.18);width:400px;max-width:calc(100vw - 32px);transform:translateY(20px) scale(.97);transition:transform .28s cubic-bezier(.34,1.4,.64,1);}
+#login-overlay.open #login-modal{transform:translateY(0) scale(1);}
+.modal-header{padding:24px 24px 0;display:flex;align-items:flex-start;justify-content:space-between;}
+.modal-title-group{display:flex;align-items:center;gap:13px;}
+.modal-icon{width:44px;height:44px;border-radius:13px;background:linear-gradient(135deg,#f59e0b,#d97706);display:flex;align-items:center;justify-content:center;flex-shrink:0;}
+.modal-title{font-size:17px;font-weight:700;color:#111;}
+.modal-subtitle{font-size:12.5px;color:var(--text-muted);margin-top:2px;}
+.modal-close{width:30px;height:30px;border-radius:8px;border:none;background:none;cursor:pointer;color:var(--text-muted);font-size:18px;display:flex;align-items:center;justify-content:center;}
+.modal-close:hover{background:var(--hover-bg);color:var(--text-primary);}
+.modal-body{padding:20px 24px 26px;}
+.field-group{display:flex;flex-direction:column;gap:14px;}
+.field{display:flex;flex-direction:column;gap:5px;}
+.field label{font-size:11.5px;font-weight:600;color:var(--text-secondary);letter-spacing:.04em;text-transform:uppercase;}
+.field-wrap{position:relative;display:flex;align-items:center;}
+.field-ico{position:absolute;left:11px;color:var(--text-muted);pointer-events:none;display:flex;align-items:center;}
+.field input{width:100%;padding:9px 12px 9px 34px;border:1.5px solid var(--input-border);border-radius:9px;font-size:14px;font-family:var(--font-ui);color:var(--text-primary);background:var(--bg);outline:none;transition:border-color .15s;}
+.field input:focus{border-color:var(--accent);box-shadow:0 0 0 3px rgba(217,119,6,.12);background:#fff;}
+.field input::placeholder{color:var(--text-muted);}
+.modal-error{margin-top:12px;padding:9px 13px;background:#fef2f2;border:1px solid #fecaca;border-radius:8px;font-size:13px;color:#dc2626;display:none;}
+.modal-error.show{display:block;}
+.modal-submit{margin-top:20px;width:100%;padding:11px;border-radius:10px;border:none;background:linear-gradient(135deg,#f59e0b,#d97706);color:#fff;font-size:14.5px;font-weight:600;font-family:var(--font-ui);cursor:pointer;box-shadow:0 4px 14px rgba(217,119,6,.3);}
+.modal-submit:hover{opacity:.9;}
+.modal-submit:disabled{opacity:.55;cursor:not-allowed;}
+.modal-note{margin-top:14px;text-align:center;font-size:12px;color:var(--text-muted);border-top:1px solid var(--sidebar-border);padding-top:14px;}
+</style>
+</head>
+<body>
+<div id="not-logged-toast">
+  <svg width="15" height="15" fill="none" stroke="#fbbf24" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="12" cy="12" r="10"/><line x1="12" y1="8" x2="12" y2="12"/><circle cx="12" cy="16" r=".5" fill="#fbbf24"/></svg>
+  <span>&#x8BF7;&#x5148;&#x767B;&#x5F55;&#x91D1;&#x8776;&#x7CFB;&#x7EDF;</span>
+  <button class="toast-login-link" onclick="openLoginFromToast()">&#x7ACB;&#x5373;&#x767B;&#x5F55;</button>
+</div>
+<div id="sidebar">
+  <div id="sidebar-header">
+    <button id="new-chat-btn" onclick="newChat()">
+      <svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.3" viewBox="0 0 24 24"><path d="M12 5v14M5 12h14" stroke-linecap="round"/></svg>&#x65B0;&#x5EFA;&#x5BF9;&#x8BDD;
+    </button>
+  </div>
+  <div id="sessions-list"><div class="section-label">&#x5386;&#x53F2;&#x5BF9;&#x8BDD;</div></div>
+  <div id="sidebar-footer"><div class="app-label"><span class="dot"></span>&#x91D1;&#x8776; &middot; &#x667A;&#x80FD;&#x95EE;&#x7B54;&#x7CFB;&#x7EDF;</div></div>
+</div>
+<div id="main">
+  <div id="topbar">
+    <span id="topbar-title">&#x91D1;&#x8776;&#x667A;&#x80FD;&#x95EE;&#x7B54;</span>
+    <span class="spacer"></span>
+    <button id="clear-btn" onclick="clearSession()">
+      <svg width="12" height="12" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><polyline points="1 4 1 10 7 10"/><path d="M3.51 15a9 9 0 1 0 .49-3.95"/></svg>&#x6E05;&#x7A7A;&#x8BB0;&#x5FC6;
+    </button>
+    <button id="nomem-btn" onclick="toggleNoMemory()" title="无记忆模式：不携带历史记忆，节省Token">
+      <span class="nomem-dot"></span><span id="nomem-btn-text">&#x65E0;&#x8BB0;&#x5FC6;</span>
+    </button>
+    <button id="login-btn" onclick="openLoginModal()">
+      <span class="login-dot"></span><span id="login-btn-text">&#x767B;&#x5F55;&#x91D1;&#x8776;</span>
+    </button>
+  </div>
+  <div id="messages">
+    <div id="empty-state">
+      <div class="es-icon"><svg width="26" height="26" fill="none" stroke="white" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>
+      <h2>&#x91D1;&#x8776;&#x667A;&#x80FD;&#x95EE;&#x7B54;</h2>
+      <p>&#x57FA;&#x4E8E; DeepSeek + LangChain4j&#xFF0C;&#x5B9E;&#x65F6;&#x67E5;&#x8BE2;&#x91D1;&#x8776; ERP &#x6570;&#x636E;</p>
+      <div class="chips">
+        <button class="chip" onclick="useChip(this)">&#x8170;&#x6258;&#x5728;&#x54EA;&#x4E2A;&#x4ED3;&#x5E93;&#xFF1F;</button>
+        <button class="chip" onclick="useChip(this)">&#x67E5;&#x8BE2;&#x8FD1;&#x671F;&#x91C7;&#x8D2D;&#x8BA2;&#x5355;</button>
+        <button class="chip" onclick="useChip(this)">&#x5E93;&#x5B58;&#x4E0D;&#x8DB3;&#x7684;&#x7269;&#x6599;&#x6709;&#x54EA;&#x4E9B;&#xFF1F;</button>
+        <button class="chip" onclick="useChip(this)">&#x67E5;&#x770B;&#x6240;&#x6709;&#x4F9B;&#x5E94;&#x5546;</button>
+      </div>
+    </div>
+  </div>
+  <div id="input-area">
+    <div id="image-preview-bar"></div>
+    <div id="input-box">
+      <textarea id="user-input" rows="1" placeholder="&#x5411;&#x91D1;&#x8776;ERP&#x63D0;&#x95EE;&#xFF0C;&#x4F8B;&#x5982;&#xFF1A;&#x8170;&#x6258;&#x7684;&#x5E93;&#x5B58;&#x662F;&#x591A;&#x5C11;&#xFF1F;" onkeydown="handleKey(event)" oninput="autoResize(this)"></textarea>
+      <input type="file" id="img-file-input" accept="image/*" multiple onchange="onImgFileSelect(event)">
+      <button class="tool-btn" id="img-btn" onclick="document.getElementById('img-file-input').click()" title="&#x4E0A;&#x4F20;&#x56FE;&#x7247;">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+      </button>
+      <button class="tool-btn" id="mic-btn" onclick="toggleMic()" title="&#x8BED;&#x97F3;&#x8F93;&#x5165;">
+        <svg width="15" height="15" fill="none" stroke="currentColor" stroke-width="2.2" viewBox="0 0 24 24"><rect x="9" y="2" width="6" height="11" rx="3"/><path d="M5 10a7 7 0 0 0 14 0"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+      </button>
+      <button id="send-btn" onclick="sendMessage()" title="&#x53D1;&#x9001;">
+        <svg width="15" height="15" fill="none" stroke="white" stroke-width="2.3" viewBox="0 0 24 24"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+      </button>
+    </div>
+    <div id="input-hint">Enter &#x53D1;&#x9001; &nbsp;&middot;&nbsp; Shift+Enter &#x6362;&#x884C; &nbsp;&middot;&nbsp; &#x53EF;&#x7C98;&#x8D34;&#x56FE;&#x7247;</div>
+  </div>
+</div>
+<div id="login-overlay" onclick="overlayClick(event)">
+  <div id="login-modal">
+    <div class="modal-header">
+      <div class="modal-title-group">
+        <div class="modal-icon"><svg width="22" height="22" fill="none" stroke="white" stroke-width="2.2" viewBox="0 0 24 24"><path d="M15 3h4a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2h-4"/><polyline points="10 17 15 12 10 7"/><line x1="15" y1="12" x2="3" y2="12"/></svg></div>
+        <div><div class="modal-title">&#x767B;&#x5F55;&#x91D1;&#x8776; ERP</div><div class="modal-subtitle">&#x8F93;&#x5165;&#x8D26;&#x5957;&#x51ED;&#x636E;&#x4EE5;&#x83B7;&#x53D6;&#x8BBF;&#x95EE;&#x4EE4;&#x724C;</div></div>
+      </div>
+      <button class="modal-close" onclick="closeLoginModal()">&#x2715;</button>
+    </div>
+    <div class="modal-body">
+      <div class="field-group">
+        <div class="field">
+          <label>&#x8D26;&#x5957; ID</label>
+          <div class="field-wrap">
+            <span class="field-ico"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0 1 10 0v4"/></svg></span>
+            <input id="f-acctid" type="text" placeholder="&#x4F8B;&#x5982;&#xFF1A;69325ee82d4640" autocomplete="off"/>
+          </div>
+        </div>
+        <div class="field">
+          <label>&#x7528;&#x6237;&#x540D;</label>
+          <div class="field-wrap">
+            <span class="field-ico"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><circle cx="12" cy="8" r="4"/><path d="M4 20c0-4 3.6-7 8-7s8 3 8 7"/></svg></span>
+            <input id="f-username" type="text" placeholder="&#x4F8B;&#x5982;&#xFF1A;manager" autocomplete="off"/>
+          </div>
+        </div>
+        <div class="field">
+          <label>&#x5BC6;&#x7801;</label>
+          <div class="field-wrap">
+            <span class="field-ico"><svg width="14" height="14" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24"><rect x="3" y="11" width="18" height="11" rx="2"/><circle cx="12" cy="16" r="1"/></svg></span>
+            <input id="f-password" type="password" placeholder="&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;&#x2022;" autocomplete="current-password"/>
+          </div>
+        </div>
+      </div>
+      <div class="modal-error" id="modal-error"></div>
+      <button class="modal-submit" id="modal-submit-btn" onclick="doLogin()">&#x767B; &#x5F55;</button>
+      <div class="modal-note">Token &#x5728;&#x672C;&#x6B21;&#x670D;&#x52A1;&#x8FD0;&#x884C;&#x671F;&#x95F4;&#x4FDD;&#x6301;&#x6709;&#x6548;</div>
+    </div>
+  </div>
+</div>
+<script>
+let currentSessionId = null;
+let noMemoryMode = false;
+let isLoggedIn = false;
+const sessionTotalTokens = {};
+let pendingImages = [];
+let toastTimer = null;
+
+window.onload = async () => {
+  await checkLoginStatus();
+  await loadSessions();
+  const first = document.querySelector('.session-item');
+  if (first) first.click();
+  document.addEventListener('paste', onPaste);
+};
+
+async function checkLoginStatus() {
+  try {
+    const res = await fetch('/api/login/status');
+    const d = await res.json();
+    isLoggedIn = d.loggedIn;
+    setLoginState(d.loggedIn, null);
+  } catch(e) {}
+}
+
+function setLoginState(loggedIn, username) {
+  isLoggedIn = loggedIn;
+  const btn = document.getElementById('login-btn');
+  const txt = document.getElementById('login-btn-text');
+  if (loggedIn) {
+    btn.classList.add('logged-in');
+    txt.textContent = username ? username + ' \u00b7 \u5df2\u767b\u5f55' : '\u5df2\u767b\u5f55';
+  } else {
+    btn.classList.remove('logged-in');
+    txt.textContent = '\u767b\u5f55\u91d1\u8776';
+  }
+}
+
+function showNotLoggedToast() {
+  const t = document.getElementById('not-logged-toast');
+  t.classList.add('show');
+  if (toastTimer) clearTimeout(toastTimer);
+  toastTimer = setTimeout(() => t.classList.remove('show'), 4000);
+}
+
+function openLoginFromToast() {
+  document.getElementById('not-logged-toast').classList.remove('show');
+  openLoginModal();
+}
+
+async function loadSessions() {
+  try { renderSessionList(await (await fetch('/api/sessions')).json()); } catch(e) {}
+}
+
+function renderSessionList(list) {
+  const c = document.getElementById('sessions-list');
+  c.querySelectorAll('.session-item').forEach(el => el.remove());
+  const tip = c.querySelector('.no-tip');
+  if (!list.length) {
+    if (!tip) {
+      const d = document.createElement('div');
+      d.className = 'no-tip';
+      d.style.cssText = 'text-align:center;color:#a8a49e;font-size:13px;padding:20px 10px;';
+      d.textContent = '\u6682\u65e0\u5386\u53f2\u5bf9\u8bdd';
+      c.appendChild(d);
+    }
+    return;
+  }
+  if (tip) tip.remove();
+  list.forEach(s => {
+    const item = document.createElement('div');
+    item.className = 'session-item' + (s.id === currentSessionId ? ' active' : '');
+    item.dataset.id = s.id;
+    item.innerHTML = '<div class="s-info"><div class="s-title">' + escHtml(s.title) + '</div><div class="s-time">' + escHtml(s.createdAt) + '</div></div><button class="del-btn" onclick="deleteSession(event,\'' + s.id + '\')">\u00d7</button>';
+    item.addEventListener('click', e => { if (!e.target.classList.contains('del-btn')) switchSession(s.id, s.title); });
+    c.appendChild(item);
+  });
+}
+
+async function newChat() {
+  const data = await (await fetch('/api/sessions', {method:'POST'})).json();
+  currentSessionId = data.id;
+  sessionTotalTokens[currentSessionId] = 0;
+  showEmptyState();
+  document.getElementById('topbar-title').textContent = '\u65b0\u5bf9\u8bdd';
+  await loadSessions(); highlightActive();
+}
+
+async function switchSession(id, title) {
+  currentSessionId = id;
+  document.getElementById('topbar-title').textContent = title;
+  highlightActive();
+  renderMessages(await (await fetch('/api/sessions/' + id + '/messages')).json());
+}
+
+async function deleteSession(e, id) {
+  e.stopPropagation();
+  await fetch('/api/sessions/' + id, {method:'DELETE'});
+  delete sessionTotalTokens[id];
+  if (currentSessionId === id) { currentSessionId = null; showEmptyState(); document.getElementById('topbar-title').textContent = '\u91d1\u8776\u667a\u80fd\u95ee\u7b54'; }
+  await loadSessions();
+}
+
+function highlightActive() {
+  document.querySelectorAll('.session-item').forEach(el => el.classList.toggle('active', el.dataset.id === currentSessionId));
+}
+
+function renderMessages(msgs) {
+  const box = document.getElementById('messages');
+  box.innerHTML = '';
+  if (!msgs.length) { showEmptyState(); return; }
+  let acc = 0;
+  msgs.forEach(m => { if (m.role === 'assistant') acc += (m.totalTokens||0); appendMessage(m.role, m.content, m, acc, false); });
+  sessionTotalTokens[currentSessionId] = acc;
+  scrollToBottom();
+}
+
+function appendMessage(role, content, stats, accT, animate) {
+  const box = document.getElementById('messages');
+  const es = document.getElementById('empty-state');
+  if (es) es.style.display = 'none';
+  const wrap = document.createElement('div'); wrap.className = 'msg-wrap';
+  const row = document.createElement('div'); row.className = 'msg-row ' + role;
+  if (animate) row.style.animation = 'fadeUp .2s ease both';
+  const av = document.createElement('div'); av.className = 'avatar'; av.textContent = role === 'user' ? 'U' : 'AI';
+  const col = document.createElement('div'); col.className = 'bubble-col';
+  const bub = document.createElement('div'); bub.className = 'bubble';
+  if (typeof content === 'string' && content.startsWith('[IMG:')) {
+    const sep = content.indexOf(']');
+    const imgSrc = content.substring(5, sep);
+    const text = content.substring(sep + 1).trim();
+    if (imgSrc) { const im = document.createElement('img'); im.src = imgSrc; im.className = 'bubble-img'; bub.appendChild(im); }
+    const td = document.createElement('div'); td.innerHTML = renderMarkdown(text); bub.appendChild(td);
+  } else {
+    bub.innerHTML = renderMarkdown(content);
+  }
+  col.appendChild(bub);
+  if (role === 'assistant' && stats && stats.elapsedMs > 0) {
+    const p = document.createElement('div'); p.className = 'msg-stats';
+    const f = ms => ms > 0 ? (ms/1000).toFixed(1)+'s' : '-';
+    p.innerHTML = si('\u5206\u6790',f(stats.analyzeMs))+sd()+si('API',f(stats.apiMs))+sd()+si('\u6574\u7406',f(stats.thinkMs))+sd()+si('\u603b\u8017\u65f6',f(stats.elapsedMs))+sd()+si('\u5de5\u5177',(stats.toolCallCount||0)+'\u6b21')+sd()+si('Token',(stats.totalTokens||0)>0?stats.totalTokens.toLocaleString():'-')+sd()+si('\u7d2f\u8ba1',accT>0?accT.toLocaleString():'-');
+    col.appendChild(p);
+  }
+  row.appendChild(av); row.appendChild(col); wrap.appendChild(row); box.appendChild(wrap);
+  scrollToBottom();
+}
+
+function si(l,v){return '<span class="stat-item"><span class="stat-label">'+l+'</span><span class="stat-value">'+v+'</span></span>';}
+function sd(){return '<span class="stat-sep">&middot;</span>';}
+
+
+function createStreamingBubble() {
+  const box = document.getElementById('messages');
+  const es = document.getElementById('empty-state');
+  if (es) es.style.display = 'none';
+  const wrap = document.createElement('div'); wrap.className = 'msg-wrap';
+  const row = document.createElement('div'); row.className = 'msg-row assistant';
+  row.style.animation = 'fadeUp .2s ease both';
+  const av = document.createElement('div'); av.className = 'avatar'; av.textContent = 'AI';
+  const col = document.createElement('div'); col.className = 'bubble-col';
+  const bub = document.createElement('div'); bub.className = 'bubble';
+  // 初始显示「正在思考」提示
+  bub.innerHTML = '<div class="thinking-indicator"><span class="thinking-dot"></span><span class="thinking-dot"></span><span class="thinking-dot"></span><span class="thinking-text">正在思考...</span></div>';
+  col.appendChild(bub);
+  row.appendChild(av); row.appendChild(col); wrap.appendChild(row); box.appendChild(wrap);
+  scrollToBottom();
+  return row;
+}
+
+function finalizeStreamingBubble(row, fullText, stats, accT) {
+  const col = row.querySelector('.bubble-col');
+  const bub = row.querySelector('.bubble');
+  bub.innerHTML = renderMarkdown(fullText);
+  // 添加统计栏
+  if (stats && stats.elapsedMs > 0) {
+    const p = document.createElement('div'); p.className = 'msg-stats';
+    const f = ms => ms > 0 ? (ms/1000).toFixed(1)+'s' : '-';
+    p.innerHTML = si('分析',f(stats.analyzeMs))+sd()+si('API',f(stats.apiMs))+sd()+si('整理',f(stats.thinkMs))+sd()+si('总耗时',f(stats.elapsedMs))+sd()+si('工具',(stats.toolCalls||0)+'次')+sd()+si('Token',(stats.totalTokens||0)>0?stats.totalTokens.toLocaleString():'-')+sd()+si('累计',accT>0?accT.toLocaleString():'-');
+    col.appendChild(p);
+  }
+  scrollToBottom();
+}
+function showTyping() {
+  const box = document.getElementById('messages');
+  const w = document.createElement('div'); w.className = 'msg-wrap'; w.id = 'typing-indicator';
+  w.innerHTML = '<div class="msg-row assistant"><div class="avatar">AI</div><div class="bubble-col"><div class="bubble"><div class="typing-dots"><span></span><span></span><span></span></div></div></div></div>';
+  box.appendChild(w); scrollToBottom();
+}
+function removeTyping() { const el = document.getElementById('typing-indicator'); if (el) el.remove(); }
+async function sendMessage() {
+  if (!isLoggedIn) { showNotLoggedToast(); return; }
+  const inp = document.getElementById('user-input');
+  const text = inp.value.trim();
+  if (!text && pendingImages.length === 0) return;
+  if (!currentSessionId) await newChat();
+  const loading = pendingImages.filter(i => i.status === 'loading');
+  if (loading.length > 0) { alert('\u56fe\u7247\u6b63\u5728\u8bc6\u522b\u4e2d\uff0c\u8bf7\u7a0d\u5019\u518d\u53d1\u9001\u3002'); return; }
+  let ocrParts = [];
+  let firstImgDataUrl = pendingImages.length > 0 ? pendingImages[0].dataUrl : null;
+  for (const img of pendingImages) {
+    if (img.status === 'done' && img.ocrText) ocrParts.push('\u3010\u56fe\u7247\u6587\u5b57\u3011\n' + img.ocrText);
+    else if (img.status === 'error') ocrParts.push('\u3010\u56fe\u7247\u8bc6\u522b\u5931\u8d25\u3011');
+  }
+  let finalMessage = text;
+  if (ocrParts.length > 0) finalMessage = (text ? text + '\n\n' : '') + ocrParts.join('\n\n');
+  const displayContent = firstImgDataUrl ? '[IMG:' + firstImgDataUrl + ']' + (text||'') : (text||'\uff08\u56fe\u7247\u5185\u5bb9\uff09');
+  inp.value = ''; autoResize(inp);
+  clearPendingImages();
+  setSending(true);
+  appendMessage('user', displayContent, null, 0, true);
+
+  // 创建 AI 回复气泡（显示等待状态）
+  const aiRow = createStreamingBubble();
+  const bubbleEl = aiRow.querySelector('.bubble');
+
+  // 等待动画轮转提示
+  let thinkingTimer = setInterval(() => {
+    const ti = bubbleEl.querySelector('.thinking-text');
+    if (ti) {
+      const msgs = ['正在思考...', '正在调用工具...', '正在查询数据...', '请稍候...'];
+      const idx = msgs.indexOf(ti.textContent);
+      ti.textContent = msgs[(idx + 1) % msgs.length];
+    }
+  }, 2000);
+
+  try {
+    const res = await fetch('/api/chat', {
+      method: 'POST',
+      headers: {'Content-Type': 'application/json'},
+      body: JSON.stringify({sessionId: currentSessionId, message: finalMessage, noMemory: noMemoryMode})
+    });
+    const data = await res.json();
+    clearInterval(thinkingTimer);
+    if (data.error) {
+      bubbleEl.innerHTML = renderMarkdown('错误：' + data.error);
+    } else {
+      if (!sessionTotalTokens[currentSessionId]) sessionTotalTokens[currentSessionId] = 0;
+      sessionTotalTokens[currentSessionId] += (data.totalTokens||0);
+      finalizeStreamingBubble(aiRow, data.reply||'', data, sessionTotalTokens[currentSessionId]);
+      if (data.sessionTitle) { document.getElementById('topbar-title').textContent = data.sessionTitle; await loadSessions(); highlightActive(); }
+    }
+  } catch(e) {
+    clearInterval(thinkingTimer);
+    bubbleEl.innerHTML = renderMarkdown('请求失败，请检查服务是否正常运行。');
+  }
+  finally { clearInterval(thinkingTimer); setSending(false); inp.focus(); }
+}
+
+function toggleNoMemory() {
+  noMemoryMode = !noMemoryMode;
+  const btn = document.getElementById('nomem-btn');
+  const txt = document.getElementById('nomem-btn-text');
+  if (noMemoryMode) {
+    btn.classList.add('active');
+    txt.textContent = '无记忆 • 开';
+  } else {
+    btn.classList.remove('active');
+    txt.textContent = '无记忆';
+  }
+}
+
+async function clearSession() {
+  if (!currentSessionId) return;
+  await fetch('/api/clear/' + currentSessionId, {method:'POST'});
+  sessionTotalTokens[currentSessionId] = 0; showEmptyState();
+}
+
+async function useChip(btn) {
+  if (!isLoggedIn) { showNotLoggedToast(); return; }
+  const text = btn.textContent.trim();
+  if (!currentSessionId) await newChat();
+  const inp = document.getElementById('user-input');
+  inp.value = text; autoResize(inp); inp.focus();
+  await sendMessage();
+}
+
+function showEmptyState() {
+  const box = document.getElementById('messages'); box.innerHTML = '';
+  const d = document.createElement('div'); d.id = 'empty-state';
+  d.style.cssText = 'display:flex;flex-direction:column;align-items:center;justify-content:center;height:100%;gap:16px;';
+  d.innerHTML = '<div class="es-icon"><svg width="26" height="26" fill="none" stroke="white" stroke-width="2.2" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg></div>'
+    + '<h2>\u91d1\u8776\u667a\u80fd\u95ee\u7b54</h2><p>\u57fa\u4e8e DeepSeek + LangChain4j\uff0c\u5b9e\u65f6\u67e5\u8be2\u91d1\u8776 ERP \u6570\u636e</p>'
+    + '<div class="chips"><button class="chip" onclick="useChip(this)">\u8170\u6258\u5728\u54ea\u4e2a\u4ed3\u5e93\uff1f</button>'
+    + '<button class="chip" onclick="useChip(this)">\u67e5\u8be2\u8fd1\u671f\u91c7\u8d2d\u8ba2\u5355</button>'
+    + '<button class="chip" onclick="useChip(this)">\u5e93\u5b58\u4e0d\u8db3\u7684\u7269\u6599\u6709\u54ea\u4e9b\uff1f</button>'
+    + '<button class="chip" onclick="useChip(this)">\u67e5\u770b\u6240\u6709\u4f9b\u5e94\u5546</button></div>';
+  box.appendChild(d);
+}
+
+function setSending(v) { ['send-btn','user-input','mic-btn','img-btn'].forEach(id => { const el=document.getElementById(id); if(el) el.disabled=v; }); }
+function scrollToBottom() { const m=document.getElementById('messages'); m.scrollTop=m.scrollHeight; }
+function handleKey(e) { if(e.key==='Enter'&&!e.shiftKey){e.preventDefault();sendMessage();} }
+function autoResize(ta) { ta.style.height='auto'; ta.style.height=Math.min(ta.scrollHeight,180)+'px'; }
+function escHtml(s) { return String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+function renderMarkdown(text) {
+  let s = escHtml(text);
+  s = s.replace(/```([\s\S]*?)```/g,'<pre><code>$1</code></pre>');
+  s = s.replace(/`([^`]+)`/g,'<code>$1</code>');
+  s = s.replace(/\*\*([^*]+)\*\*/g,'<strong>$1</strong>');
+  s = s.replace(/\*([^*]+)\*/g,'<em>$1</em>');
+  s = s.replace(/^### (.+)$/gm,'<h3>$1</h3>');
+  s = s.replace(/^## (.+)$/gm,'<h2>$1</h2>');
+  s = s.replace(/^---$/gm,'<hr>');
+  s = s.replace(/^[\-\*] (.+)$/gm,'<li>$1</li>');
+  s = s.replace(/(<li>.*<\/li>)/s,'<ul>$1</ul>');
+  s = s.replace(/^\d+\. (.+)$/gm,'<li>$1</li>');
+  s = s.split(/\n{2}/).map(p=>{p=p.trim();if(!p)return'';if(/^<(h[23]|hr|ul|ol|pre|li)/.test(p))return p;return'<p>'+p.replace(/\n/g,'<br>')+'</p>';}).join('');
+  return s;
+}
+// Image upload & OCR
+function onImgFileSelect(e) {
+  Array.from(e.target.files).forEach(file => addImageFile(file));
+  e.target.value = '';
+}
+function onPaste(e) {
+  const items = e.clipboardData && e.clipboardData.items;
+  if (!items) return;
+  for (const item of items) {
+    if (item.type.startsWith('image/')) { e.preventDefault(); addImageFile(item.getAsFile()); }
+  }
+}
+function addImageFile(file) {
+  if (!file) return;
+  const idx = pendingImages.length;
+  const entry = { file, dataUrl: null, ocrText: null, status: 'loading' };
+  pendingImages.push(entry);
+  const reader = new FileReader();
+  reader.onload = ev => { entry.dataUrl = ev.target.result; renderImagePreview(); doOcr(entry, idx); };
+  reader.readAsDataURL(file);
+}
+async function doOcr(entry, idx) {
+  try {
+    const fd = new FormData(); fd.append('file', entry.file);
+    const res = await fetch('/api/ocr', {method:'POST', body: fd});
+    const data = await res.json();
+    if (data.ok) { entry.ocrText = data.text; entry.status = 'done'; }
+    else { entry.status = 'error'; }
+  } catch(e) { entry.status = 'error'; }
+  renderImagePreview();
+}
+function renderImagePreview() {
+  const bar = document.getElementById('image-preview-bar');
+  bar.innerHTML = '';
+  if (pendingImages.length === 0) { bar.classList.remove('has-images'); return; }
+  bar.classList.add('has-images');
+  pendingImages.forEach((img, i) => {
+    const wrap = document.createElement('div'); wrap.className = 'img-thumb-wrap';
+    const im = document.createElement('img'); im.src = img.dataUrl || ''; wrap.appendChild(im);
+    const rm = document.createElement('button'); rm.className = 'img-remove-btn'; rm.textContent = '\u00d7';
+    rm.onclick = () => { pendingImages.splice(i,1); renderImagePreview(); };
+    wrap.appendChild(rm);
+    const st = document.createElement('div');
+    st.className = 'ocr-status ' + img.status;
+    st.textContent = img.status === 'loading' ? 'OCR...' : img.status === 'done' ? '\u5df2\u8bc6\u522b' : '\u5931\u8d25';
+    wrap.appendChild(st);
+    bar.appendChild(wrap);
+  });
+}
+function clearPendingImages() { pendingImages = []; renderImagePreview(); }
+
+// ASR - 按官方文档录音并发送 WAV 给后端
+let audioStream = null;
+let mediaRecorder = null;
+let audioChunks = [];
+let isRecording = false;
+
+async function toggleMic() {
+  if (isRecording) { stopRecording(); return; }
+  try {
+    audioStream = await navigator.mediaDevices.getUserMedia({audio:{channelCount:1,sampleRate:8000,echoCancellation:true,noiseSuppression:true}});
+    const mimeType = MediaRecorder.isTypeSupported('audio/wav') ? 'audio/wav'
+                   : MediaRecorder.isTypeSupported('audio/webm;codecs=opus') ? 'audio/webm;codecs=opus'
+                   : 'audio/webm';
+    mediaRecorder = new MediaRecorder(audioStream, {mimeType});
+    audioChunks = [];
+    mediaRecorder.ondataavailable = e => { if (e.data.size > 0) audioChunks.push(e.data); };
+    mediaRecorder.onstop = processAudio;
+    mediaRecorder.start(100);
+    isRecording = true;
+    const btn = document.getElementById('mic-btn');
+    btn.classList.add('recording');
+    document.getElementById('user-input').placeholder = '正在录音，再次点击停止...';
+  } catch(err) {
+    if (err.name === 'NotAllowedError') alert('麦克风权限被拒绝，请允许麦克风访问。');
+    else alert('无法访问麦克风: ' + err.message);
+  }
+}
+
+function stopRecording() {
+  if (!isRecording) return;
+  isRecording = false;
+  if (mediaRecorder && mediaRecorder.state !== 'inactive') mediaRecorder.stop();
+  if (audioStream) { audioStream.getTracks().forEach(t => t.stop()); audioStream = null; }
+  const btn = document.getElementById('mic-btn');
+  btn.classList.remove('recording'); btn.classList.add('processing');
+  document.getElementById('user-input').placeholder = '语音识别中...';
+}
+
+async function processAudio() {
+  const btn = document.getElementById('mic-btn');
+  try {
+    // 用 OfflineAudioContext 重采样到 16000Hz PCM，再封装成 WAV 发送
+    const blob = new Blob(audioChunks, {type: mediaRecorder.mimeType || 'audio/webm'});
+    audioChunks = [];
+    const arrayBuffer = await blob.arrayBuffer();
+    const decodeCtx = new (window.AudioContext || window.webkitAudioContext)();
+    const audioBuffer = await decodeCtx.decodeAudioData(arrayBuffer);
+    await decodeCtx.close();
+    const dstRate = 8000;
+    const offlineCtx = new OfflineAudioContext(1, Math.ceil(audioBuffer.duration * dstRate), dstRate);
+    const src = offlineCtx.createBufferSource();
+    src.buffer = audioBuffer;
+    src.connect(offlineCtx.destination);
+    src.start(0);
+    const rendered = await offlineCtx.startRendering();
+    const float32 = rendered.getChannelData(0);
+    // float32 -> int16 PCM
+    const int16 = new Int16Array(float32.length);
+    for (let i = 0; i < float32.length; i++) {
+      const s = Math.max(-1, Math.min(1, float32[i]));
+      int16[i] = s < 0 ? s * 0x8000 : s * 0x7FFF;
+    }
+    // 封装 WAV（后端按 format=wav, rate=16000 发给百度）
+    const wavBlob = buildWav(int16, dstRate);
+    const fd = new FormData();
+    fd.append('file', wavBlob, 'audio.wav');
+    fd.append('format', 'wav');
+    fd.append('rate', '8000');
+    const res = await fetch('/api/asr', {method:'POST', body:fd});
+    const data = await res.json();
+    if (data.ok && data.text) {
+      const inp = document.getElementById('user-input');
+      inp.value = (inp.value ? inp.value + ' ' : '') + data.text;
+      autoResize(inp);
+    } else {
+      alert('语音识别失败: ' + (data.error || '未知错误'));
+    }
+  } catch(err) {
+    alert('语音识别请求失败: ' + err.message);
+  } finally {
+    btn.classList.remove('processing');
+    document.getElementById('user-input').placeholder = '向金蝶ERP提问，例如：腰托的库存是多少？';
+  }
+}
+
+function buildWav(int16Data, sampleRate) {
+  const numCh = 1, bitsPerSample = 16;
+  const byteRate = sampleRate * numCh * bitsPerSample / 8;
+  const blockAlign = numCh * bitsPerSample / 8;
+  const dataLen = int16Data.length * 2;
+  const buf = new ArrayBuffer(44 + dataLen);
+  const view = new DataView(buf);
+  const wstr = (off, s) => { for (let i=0;i<s.length;i++) view.setUint8(off+i, s.charCodeAt(i)); };
+  wstr(0,'RIFF'); view.setUint32(4, 36+dataLen, true); wstr(8,'WAVE');
+  wstr(12,'fmt '); view.setUint32(16,16,true); view.setUint16(20,1,true);
+  view.setUint16(22,numCh,true); view.setUint32(24,sampleRate,true);
+  view.setUint32(28,byteRate,true); view.setUint16(32,blockAlign,true);
+  view.setUint16(34,bitsPerSample,true); wstr(36,'data');
+  view.setUint32(40,dataLen,true);
+  const dst = new Int16Array(buf, 44);
+  dst.set(int16Data);
+  return new Blob([buf], {type:'audio/wav'});
+}
+
+
+// Login modal
+function openLoginModal() {
+  document.getElementById('login-overlay').classList.add('open');
+  setTimeout(() => document.getElementById('f-acctid').focus(), 100);
+  const e = document.getElementById('modal-error'); e.classList.remove('show'); e.textContent = '';
+}
+function closeLoginModal() { document.getElementById('login-overlay').classList.remove('open'); }
+function overlayClick(e) { if(e.target===document.getElementById('login-overlay')) closeLoginModal(); }
+document.addEventListener('keydown', e => { if(e.key==='Escape') closeLoginModal(); });
+
+async function doLogin() {
+  const acctId = document.getElementById('f-acctid').value.trim();
+  const username = document.getElementById('f-username').value.trim();
+  const password = document.getElementById('f-password').value;
+  const errEl = document.getElementById('modal-error');
+  const btn = document.getElementById('modal-submit-btn');
+  errEl.classList.remove('show'); errEl.textContent = '';
+  if (!acctId||!username||!password) { errEl.textContent='\u8d26\u5957 ID\u3001\u7528\u6237\u540d\u3001\u5bc6\u7801\u5747\u4e0d\u80fd\u4e3a\u7a7a'; errEl.classList.add('show'); return; }
+  btn.disabled = true; btn.textContent = '\u767b\u5f55\u4e2d...';
+  try {
+    const res = await fetch('/api/login', {method:'POST', headers:{'Content-Type':'application/json'}, body: JSON.stringify({acctId, username, password})});
+    const data = await res.json();
+    if (data.ok) { setLoginState(true, data.username); closeLoginModal(); }
+    else { errEl.textContent = data.error||'\u767b\u5f55\u5931\u8d25\uff0c\u8bf7\u68c0\u67e5\u51ed\u636e'; errEl.classList.add('show'); }
+  } catch(e) { errEl.textContent='\u7f51\u7edc\u9519\u8bef\uff0c\u8bf7\u7a0d\u5019\u91cd\u8bd5'; errEl.classList.add('show'); }
+  finally { btn.disabled=false; btn.textContent='\u767b \u5f55'; }
+}
+</script>
+</body>
+</html>

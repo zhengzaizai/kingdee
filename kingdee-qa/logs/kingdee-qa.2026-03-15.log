@@ -1,0 +1,751 @@
+2026-03-15 17:33:16 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 10628 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 17:33:16 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 17:33:16 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 17:33:17 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 17:33:17 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 17:33:17 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 17:33:17 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 17:33:18 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 17:33:18 [INFO] com.kingdee.qa.Main - Started Main in 2.815 seconds (JVM running for 3.438)
+2026-03-15 17:34:32 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 11068 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 17:34:32 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 17:34:32 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 17:34:33 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 17:34:33 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 17:34:33 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 17:34:33 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 17:34:33 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 17:34:34 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2026-03-15 17:34:34 [ERROR] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-15 17:35:48 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-15 17:35:49 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库？
+2026-03-15 17:35:53 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-15 17:35:53 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2311 字符
+2026-03-15 17:36:03 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 17:36:03 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 17:36:15 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=26046ms 分析=4495ms API=0ms 整理=21551ms 工具调用=2次
+2026-03-15 17:38:47 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-15 17:38:48 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=ffa66b71-832b-484c-8bb6-5278cb8c7c0a
+2026-03-15 17:38:48 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-15 17:38:48 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-15 17:38:54 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库
+2026-03-15 17:39:02 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 17:39:02 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 17:39:02 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 17:39:03 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=4291
+2026-03-15 17:39:29 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=34692ms 分析=8338ms API=767ms 整理=25587ms 工具调用=1次
+2026-03-15 18:14:51 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 6848 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 18:14:51 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 18:14:51 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 18:14:52 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+2026-03-15 18:14:52 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.kingdee.qa.Main.main(Main.java:16)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:918)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted
+2026-03-15 18:17:00 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 6660 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 18:17:00 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 18:17:00 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 18:17:01 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+2026-03-15 18:17:01 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.kingdee.qa.Main.main(Main.java:16)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:918)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted
+2026-03-15 18:18:15 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 15536 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 18:18:15 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 18:18:15 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 18:18:16 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+2026-03-15 18:18:16 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.kingdee.qa.Main.main(Main.java:16)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:918)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted
+2026-03-15 18:20:06 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 19028 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 18:20:06 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 18:20:06 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 18:20:07 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+2026-03-15 18:20:07 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'appConfig': Injection of autowired dependencies failed; nested exception is java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:405)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.kingdee.qa.Main.main(Main.java:16)
+Caused by: java.lang.IllegalArgumentException: Could not resolve placeholder 'baidu.ocr.api_key' in value "${baidu.ocr.api_key}"
+	at org.springframework.util.PropertyPlaceholderHelper.parseStringValue(PropertyPlaceholderHelper.java:178)
+	at org.springframework.util.PropertyPlaceholderHelper.replacePlaceholders(PropertyPlaceholderHelper.java:124)
+	at org.springframework.core.env.AbstractPropertyResolver.doResolvePlaceholders(AbstractPropertyResolver.java:239)
+	at org.springframework.core.env.AbstractPropertyResolver.resolveRequiredPlaceholders(AbstractPropertyResolver.java:210)
+	at org.springframework.context.support.PropertySourcesPlaceholderConfigurer.lambda$processProperties$0(PropertySourcesPlaceholderConfigurer.java:175)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.resolveEmbeddedValue(AbstractBeanFactory.java:918)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1248)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
+	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
+	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
+	... 18 common frames omitted
+2026-03-15 18:21:47 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 7548 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 18:21:47 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 18:21:47 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 18:21:48 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 18:21:49 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 18:21:49 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 18:21:49 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 18:21:49 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 18:21:49 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2026-03-15 18:21:49 [ERROR] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-15 18:22:19 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 17112 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 18:22:19 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 18:22:19 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 18:22:21 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 18:22:21 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 18:22:21 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 18:22:21 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 18:22:21 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 18:22:21 [INFO] com.kingdee.qa.Main - Started Main in 2.281 seconds (JVM running for 2.623)
+2026-03-15 18:23:26 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 12612 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 18:23:26 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 18:23:26 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 18:23:27 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 18:23:27 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 18:23:27 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 18:23:27 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 18:23:27 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 18:23:28 [INFO] com.kingdee.qa.Main - Started Main in 2.239 seconds (JVM running for 2.589)
+2026-03-15 18:24:53 [INFO] com.kingdee.qa.web.ChatController - [OCR] 收到图片，大小: 211538 bytes
+2026-03-15 18:24:53 [INFO] c.kingdee.qa.http.BaiduTokenService - [百度OCR] Access Token 已刷新
+2026-03-15 18:25:52 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-15 18:25:52 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=71364f17-469d-4b5c-8a3a-a9889a6ef2c9
+2026-03-15 18:25:52 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-15 18:25:52 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-15 18:25:56 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-15 18:25:56 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 目前这个照片，哪一个物料数量最多
+
+【图片文字】
+物综超
+物料名称
+规格型号
+仓库名称
+批号
+库存主单位
+库存量（住单位）
+库存组织
+V
+10000284
+气管-绿色(5-3)
+外径p5内径p3
+BU1原材料库
+260204
+米
+20逸航BU1事业部
+10000757
+复合面料
+异音套(150cm*5mm)
+BU1原材料库
+260204
+米
+195逸航BU1事业部
+10003510
+电机
+P-A
+BU1原材料库
+260204
+Pcs
+800逸航BU1事业部
+10001049
+底座(PA)
+NA
+BU1原材料库
+260204
+Pcs
+800逸航BU1事业部
+10001050
+带垫防滑螺钉(PA)
+NA
+BU1原材料库
+260204
+Pcs
+600逸航BU1事业部
+10001051
+缸座(PA)
+NA
+BU1原材料库
+260204
+Pcs
+800逸航BU1事业部
+10001055
+扭轴(PA)
+NA
+BU1原材料库
+260204
+Pcs
+800逸航BU1事业部
+10001054
+钮架(PA)
+NA
+BU1原材料库
+260204
+Pcs
+800逸航BU1事业部
+10001056
+缸体(PA)
+BU1原材料库
+260204
+Pcs
+800逸航BU1事业部
+10001057
+盖底(PA)
+NA
+BU1原材料库
+260204
+Pcs
+800逸航BU1事业部
+10001058
+气垫(PA)
+NA
+BU1原材料库
+260204
+Pcs
+800逸航BU1事业部
+10001059
+上盖(PA)
+NA
+BU1原材料库
+260204
+Pcs
+800逸航BU1事业部
+10001060
+卡簧(PA)
+NA
+BU1原材料库
+260204
+Pcs
+200逸航BU1事业部
+10004259
+P-A气泵润滑油脂
+FAKKT-V166
+BU1原材料库
+260204
+kg
+999.998逸航BU1事业部
+10006719
+泵270待听异音
+BU1成品库
+260204
+Pcs
+200逸航BU1事业部
+10006664
+防异音套
+923D/480D
+BU1原材料库
+260204
+Pcs
+215逸航BU1事业部
+2026-03-15 18:26:15 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=19018ms 分析=19018ms API=0ms 整理=0ms 工具调用=0次
+2026-03-15 18:27:37 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 41426 bytes
+2026-03-15 18:27:38 [INFO] c.kingdee.qa.http.BaiduTokenService - [百度ASR] Access Token 已刷新
+2026-03-15 18:27:46 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 25004 bytes
+2026-03-15 18:27:51 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 14378 bytes
+2026-03-15 18:27:58 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 34664 bytes
+2026-03-15 18:28:03 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 30800 bytes
+2026-03-15 18:28:17 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 43358 bytes
+2026-03-15 18:29:13 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-15 18:29:19 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 你是谁
+2026-03-15 18:29:30 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=10343ms 分析=10343ms API=0ms 整理=0ms 工具调用=0次
+2026-03-15 20:12:02 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 3988 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 20:12:02 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 20:12:02 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 20:12:03 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 20:12:03 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 20:12:03 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 20:12:03 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 20:12:04 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 20:12:04 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2026-03-15 20:12:04 [ERROR] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-15 20:12:25 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 你是谁
+2026-03-15 20:12:34 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=9403ms 分析=9403ms API=0ms 整理=0ms 工具调用=0次
+2026-03-15 20:12:38 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-15 20:12:51 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 目前我有哪些仓库
+2026-03-15 20:12:55 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-15 20:12:55 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2311 字符
+2026-03-15 20:13:11 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 20:13:11 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 20:13:11 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 20:13:11 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=189
+2026-03-15 20:13:20 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 20:13:20 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 20:13:20 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 20:13:20 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=189
+2026-03-15 20:13:34 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 20:13:34 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 20:13:34 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 20:13:34 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=189
+2026-03-15 20:13:41 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 20:13:41 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 20:13:41 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 20:13:41 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=189
+2026-03-15 20:13:45 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-15 20:13:53 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 20:13:53 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 20:13:53 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 20:13:53 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=189
+2026-03-15 20:14:01 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 20:14:01 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 20:14:01 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 20:14:01 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=189
+2026-03-15 20:14:09 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 20:14:09 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 20:14:09 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 20:14:09 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=189
+2026-03-15 20:14:22 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=91033ms 分析=4586ms API=324ms 整理=86123ms 工具调用=9次
+2026-03-15 20:16:27 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 我的意思是仓库名称都有哪些
+2026-03-15 20:16:34 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 20:16:34 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 20:16:34 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 20:16:34 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=189
+2026-03-15 20:16:42 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 20:16:42 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 20:16:42 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 20:16:42 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=189
+2026-03-15 20:16:52 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=25297ms 分析=7672ms API=88ms 整理=17537ms 工具调用=2次
+2026-03-15 20:21:53 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 18980 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 20:21:53 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 20:21:53 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 20:21:54 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 20:21:54 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 20:21:54 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 20:21:54 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 20:21:54 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 20:21:55 [INFO] com.kingdee.qa.Main - Started Main in 2.151 seconds (JVM running for 2.457)
+2026-03-15 20:22:06 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 41426 bytes
+2026-03-15 20:22:06 [INFO] c.kingdee.qa.http.BaiduTokenService - [百度ASR] Access Token 已刷新
+2026-03-15 20:22:15 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 28868 bytes
+2026-03-15 20:24:32 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 13364 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 20:24:32 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 20:24:32 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 20:24:34 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 20:24:34 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 20:24:34 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 20:24:34 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 20:24:34 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 20:24:34 [INFO] com.kingdee.qa.Main - Started Main in 2.059 seconds (JVM running for 2.399)
+2026-03-15 20:26:37 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 57388 bytes
+2026-03-15 20:26:38 [INFO] c.kingdee.qa.http.BaiduTokenService - [百度ASR] Access Token 已刷新
+2026-03-15 20:26:43 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 122924 bytes
+2026-03-15 20:27:24 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 180268 bytes
+2026-03-15 20:27:24 [WARN] com.kingdee.qa.web.ChatController - [ASR] 识别失败: ASR 请求失败: 百度ASR识别失败: speech quality error.（err_no=3301）
+2026-03-15 20:27:29 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 90156 bytes
+2026-03-15 20:28:27 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-15 20:28:28 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=d689d02b-1214-4ad6-96df-7145942c70ba
+2026-03-15 20:28:28 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-15 20:28:28 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-15 20:28:34 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 81964 bytes
+2026-03-15 20:28:39 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 90156 bytes
+2026-03-15 20:28:43 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 98348 bytes
+2026-03-15 20:29:05 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 90156 bytes
+2026-03-15 20:29:13 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 90156 bytes
+2026-03-15 20:29:19 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 114732 bytes
+2026-03-15 20:30:05 [INFO] com.kingdee.qa.web.ChatController - [OCR] 收到图片，大小: 132942 bytes
+2026-03-15 20:30:06 [INFO] c.kingdee.qa.http.BaiduTokenService - [百度OCR] Access Token 已刷新
+2026-03-15 20:30:38 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 90156 bytes
+2026-03-15 20:30:45 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 131116 bytes
+2026-03-15 20:31:24 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 98348 bytes
+2026-03-15 20:31:31 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 106540 bytes
+2026-03-15 20:32:24 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 73772 bytes
+2026-03-15 20:32:30 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 131116 bytes
+2026-03-15 20:33:25 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 81964 bytes
+2026-03-15 20:33:30 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 98348 bytes
+2026-03-15 20:33:35 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 90156 bytes
+2026-03-15 20:55:12 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 9036 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 20:55:12 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 20:55:12 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 20:55:13 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 20:55:13 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 20:55:13 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 20:55:13 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 20:55:13 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 20:55:14 [INFO] com.kingdee.qa.Main - Started Main in 2.38 seconds (JVM running for 2.663)
+2026-03-15 20:58:10 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 19520 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 20:58:10 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 20:58:10 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 20:58:11 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 20:58:11 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 20:58:11 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 20:58:11 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 20:58:11 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 20:58:12 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2026-03-15 20:58:12 [ERROR] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-15 21:00:17 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 19052 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 21:00:17 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 21:00:17 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 21:00:19 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 21:00:19 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 21:00:19 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 21:00:19 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 21:00:19 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 21:00:19 [INFO] com.kingdee.qa.Main - Started Main in 2.208 seconds (JVM running for 2.514)
+2026-03-15 21:00:52 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 9064 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 21:00:52 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 21:00:52 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 21:00:53 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 21:00:53 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 21:00:53 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 21:00:53 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 21:00:53 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 21:00:54 [INFO] com.kingdee.qa.Main - Started Main in 2.262 seconds (JVM running for 2.579)
+2026-03-15 21:03:47 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 11988 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 21:03:47 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 21:03:47 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 21:03:48 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 21:03:48 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 21:03:48 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 21:03:48 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 21:03:49 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 21:03:49 [INFO] com.kingdee.qa.Main - Started Main in 2.237 seconds (JVM running for 2.521)
+2026-03-15 21:26:05 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-15 21:26:06 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=bbeffda7-2a5b-4caf-9730-3eca77b1b14c
+2026-03-15 21:26:06 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-15 21:26:06 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-15 21:26:10 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: pcm, 大小: 92204 bytes
+2026-03-15 21:26:11 [INFO] c.kingdee.qa.http.BaiduTokenService - [百度ASR] Access Token 已刷新
+2026-03-15 21:26:15 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: pcm, 大小: 71084 bytes
+2026-03-15 21:26:20 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: pcm, 大小: 96044 bytes
+2026-03-15 21:29:17 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: pcm, 大小: 78764 bytes
+2026-03-15 21:29:22 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: pcm, 大小: 78764 bytes
+2026-03-15 21:47:25 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 82604 bytes
+2026-03-15 21:47:29 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 48044 bytes
+2026-03-15 21:47:35 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 99884 bytes
+2026-03-15 21:47:39 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 78764 bytes
+2026-03-15 21:47:42 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 38444 bytes
+2026-03-15 21:47:45 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 46124 bytes
+2026-03-15 21:48:15 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 113324 bytes
+2026-03-15 21:48:21 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 94124 bytes
+2026-03-15 21:48:24 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 34604 bytes
+2026-03-15 21:48:27 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 26924 bytes
+2026-03-15 21:48:33 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 32684 bytes
+2026-03-15 21:49:25 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 97964 bytes
+2026-03-15 21:49:35 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 213164 bytes
+2026-03-15 21:49:36 [WARN] com.kingdee.qa.web.ChatController - [ASR] 识别失败: ASR 请求失败: 百度ASR识别失败: speech quality error.（err_no=3301）
+2026-03-15 21:49:54 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 105644 bytes
+2026-03-15 21:50:06 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 57644 bytes
+2026-03-15 21:50:13 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 86444 bytes
+2026-03-15 21:50:23 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 88364 bytes
+2026-03-15 21:50:31 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 117164 bytes
+2026-03-15 21:52:26 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 111404 bytes
+2026-03-15 21:54:22 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 155564 bytes
+2026-03-15 21:54:32 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 101804 bytes
+2026-03-15 21:55:50 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 12772 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 21:55:50 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 21:55:50 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 21:55:51 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 21:55:51 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 21:55:51 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 21:55:51 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 21:55:52 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 21:55:52 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2026-03-15 21:55:52 [ERROR] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-15 21:55:59 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 130604 bytes
+2026-03-15 21:58:04 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 2308 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 21:58:04 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 21:58:04 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 21:58:05 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 21:58:05 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 21:58:05 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 21:58:05 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 21:58:05 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 21:58:05 [INFO] com.kingdee.qa.Main - Started Main in 1.931 seconds (JVM running for 2.214)
+2026-03-15 21:58:22 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-15 21:58:26 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=33ee85fc-ee4f-4256-88df-7bc70c1f8b92
+2026-03-15 21:58:26 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-15 21:58:26 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-15 21:58:32 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 124844 bytes
+2026-03-15 21:58:32 [INFO] c.kingdee.qa.http.BaiduTokenService - [百度ASR] Access Token 已刷新
+2026-03-15 21:58:32 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] WAV 去头后 PCM 大小: 124800 bytes
+2026-03-15 21:58:32 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 发送请求，采样率: 16000, PCM 大小: 124800 bytes
+2026-03-15 21:58:33 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 响应: {"corpus_no":"7617481468370268916","err_msg":"success.","err_no":0,"result":[""],"sn":"128252012871773583113"}
+
+2026-03-15 21:58:53 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 90284 bytes
+2026-03-15 21:58:53 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] WAV 去头后 PCM 大小: 90240 bytes
+2026-03-15 21:58:53 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 发送请求，采样率: 16000, PCM 大小: 90240 bytes
+2026-03-15 21:58:53 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 响应: {"corpus_no":"7617481554197671592","err_msg":"success.","err_no":0,"result":["嗯。"],"sn":"802198714501773583133"}
+
+2026-03-15 21:58:58 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 59564 bytes
+2026-03-15 21:58:58 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] WAV 去头后 PCM 大小: 59520 bytes
+2026-03-15 21:58:58 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 发送请求，采样率: 16000, PCM 大小: 59520 bytes
+2026-03-15 21:58:58 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 响应: {"corpus_no":"7617481575831489507","err_msg":"success.","err_no":0,"result":["嗯。"],"sn":"381077289981773583138"}
+
+2026-03-15 21:59:00 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 15404 bytes
+2026-03-15 21:59:00 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] WAV 去头后 PCM 大小: 15360 bytes
+2026-03-15 21:59:00 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 发送请求，采样率: 16000, PCM 大小: 15360 bytes
+2026-03-15 21:59:01 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 响应: {"corpus_no":"7617481588524485164","err_msg":"success.","err_no":0,"result":["不知道。"],"sn":"781441093371773583141"}
+
+2026-03-15 22:01:17 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 4432 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 22:01:17 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 22:01:17 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 22:01:18 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 22:01:18 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 22:01:18 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 22:01:18 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 22:01:18 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 22:01:18 [INFO] com.kingdee.qa.Main - Started Main in 2.081 seconds (JVM running for 2.367)
+2026-03-15 22:01:31 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-15 22:01:32 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=fffb1e9a-6852-4247-9a06-d12b56d6d476
+2026-03-15 22:01:32 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-15 22:01:32 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-15 22:01:39 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 83564 bytes
+2026-03-15 22:01:39 [INFO] c.kingdee.qa.http.BaiduTokenService - [百度ASR] Access Token 已刷新
+2026-03-15 22:01:39 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] WAV 去头后 PCM 大小: 83520 bytes
+2026-03-15 22:01:39 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 发送请求，采样率: 8000, PCM 大小: 83520 bytes
+2026-03-15 22:01:39 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 响应: {"corpus_no":"7617482267299514415","err_msg":"success.","err_no":0,"result":[""],"sn":"380736598361773583299"}
+
+2026-03-15 22:01:43 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 34604 bytes
+2026-03-15 22:01:43 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] WAV 去头后 PCM 大小: 34560 bytes
+2026-03-15 22:01:43 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 发送请求，采样率: 8000, PCM 大小: 34560 bytes
+2026-03-15 22:01:44 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 响应: {"corpus_no":"7617482288759508492","err_msg":"success.","err_no":0,"result":["嗯。"],"sn":"720361705771773583304"}
+
+2026-03-15 22:02:09 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 42284 bytes
+2026-03-15 22:02:09 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] WAV 去头后 PCM 大小: 42240 bytes
+2026-03-15 22:02:09 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 发送请求，采样率: 8000, PCM 大小: 42240 bytes
+2026-03-15 22:02:09 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 响应: {"corpus_no":"7617482396113896366","err_msg":"success.","err_no":0,"result":["正在读音。"],"sn":"341106291311773583329"}
+
+2026-03-15 22:48:32 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 3420 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-15 22:48:32 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-15 22:48:32 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-15 22:48:33 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-15 22:48:33 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-15 22:48:33 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-15 22:48:33 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-15 22:48:34 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-15 22:48:34 [INFO] com.kingdee.qa.Main - Started Main in 2.649 seconds (JVM running for 5.297)
+2026-03-15 22:49:08 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-15 22:49:12 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=a5fab847-0050-48db-a711-7d1e0fb87bb9
+2026-03-15 22:49:12 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-15 22:49:12 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-15 22:49:20 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 47084 bytes
+2026-03-15 22:49:20 [INFO] c.kingdee.qa.http.BaiduTokenService - [百度ASR] Access Token 已刷新
+2026-03-15 22:49:20 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] WAV 去头后 PCM 大小: 47040 bytes
+2026-03-15 22:49:20 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 发送请求，采样率: 8000, PCM 大小: 47040 bytes
+2026-03-15 22:49:21 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 响应: {"corpus_no":"7617494563822211750","err_msg":"success.","err_no":0,"result":[""],"sn":"584264814231773586162"}
+
+2026-03-15 22:49:46 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 49004 bytes
+2026-03-15 22:49:46 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] WAV 去头后 PCM 大小: 48960 bytes
+2026-03-15 22:49:46 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 发送请求，采样率: 8000, PCM 大小: 48960 bytes
+2026-03-15 22:49:47 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 响应: {"corpus_no":"7617494675436752020","err_msg":"success.","err_no":0,"result":["查询电梯采购订单。"],"sn":"88574396751773586188"}
+
+2026-03-15 22:49:52 [INFO] com.kingdee.qa.web.ChatController - [ASR] 收到音频，格式: wav, 大小: 45164 bytes
+2026-03-15 22:49:52 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] WAV 去头后 PCM 大小: 45120 bytes
+2026-03-15 22:49:52 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 发送请求，采样率: 8000, PCM 大小: 45120 bytes
+2026-03-15 22:49:52 [INFO] com.kingdee.qa.http.BaiduAsrService - [百度ASR] 响应: {"corpus_no":"7617494700976862271","err_msg":"success.","err_no":0,"result":["查询近期采购订单。"],"sn":"69132239621773586194"}
+
+2026-03-15 23:01:08 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-15 23:01:08 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 某个物料叫"腰托"，我想查它现在还有多少库存，请问怎么写查询条件？
+2026-03-15 23:01:14 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-15 23:01:14 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2311 字符
+2026-03-15 23:01:25 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 23:01:25 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 23:01:25 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 23:01:26 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=4291
+2026-03-15 23:01:58 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=50673ms 分析=6278ms API=1275ms 整理=43120ms 工具调用=2次
+2026-03-15 23:02:57 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 我直接查 FMATERIALID，为什么返回的是一串数字而不是物料名称？
+2026-03-15 23:03:28 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=30916ms 分析=30916ms API=0ms 整理=0ms 工具调用=0次
+2026-03-15 23:03:48 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 我想知道"成品仓"里所有物料的库存，条件怎么写？
+2026-03-15 23:03:56 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 23:03:56 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 23:03:56 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 23:03:57 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=73
+2026-03-15 23:04:08 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 23:04:08 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 23:04:08 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 23:04:08 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=8159
+2026-03-15 23:04:50 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=62769ms 分析=8746ms API=306ms 整理=53717ms 工具调用=2次
+2026-03-15 23:06:27 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 我想知道哪个物料库存最多，接口能直接排序返回吗？
+2026-03-15 23:06:55 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 23:06:55 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 23:06:55 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 23:06:55 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=487
+2026-03-15 23:07:40 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=72617ms 分析=27466ms API=177ms 整理=44974ms 工具调用=1次
+2026-03-15 23:08:58 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 仓库里面有什么东西是少于50件的
+2026-03-15 23:09:09 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 23:09:09 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 23:09:09 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 23:09:09 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=7494
+2026-03-15 23:09:23 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 23:09:23 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 23:09:23 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 23:09:23 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=9091
+2026-03-15 23:10:17 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=79131ms 分析=10659ms API=292ms 整理=68180ms 工具调用=2次
+2026-03-15 23:13:55 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 目前我的库存里面什么东西最多
+2026-03-15 23:14:06 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-15 23:14:06 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-15 23:14:06 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-15 23:14:06 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=972
+2026-03-15 23:14:56 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=60685ms 分析=11076ms API=151ms 整理=49458ms 工具调用=1次
+2026-03-15 23:21:03 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-15 23:21:05 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat

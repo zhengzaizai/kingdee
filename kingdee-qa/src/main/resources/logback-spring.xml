@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+
+    <!-- 控制台输出：只显示 WARN 及以上 -->
+    <appender name="CONSOLE" class="ch.qos.logback.core.ConsoleAppender">
+        <filter class="ch.qos.logback.classic.filter.ThresholdFilter">
+            <level>WARN</level>
+        </filter>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d{HH:mm:ss} [%level] %logger{20} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 文件输出：INFO 及以上，每天轮转，保留 7 天 -->
+    <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
+        <file>logs/kingdee-qa.log</file>
+        <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
+            <fileNamePattern>logs/kingdee-qa.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <maxHistory>7</maxHistory>
+        </rollingPolicy>
+        <encoder>
+            <charset>UTF-8</charset>
+            <pattern>%d{yyyy-MM-dd HH:mm:ss} [%level] %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <!-- 屏蔽 LangChain4j / OkHttp 内部日志 -->
+    <logger name="dev.langchain4j" level="WARN"/>
+    <logger name="okhttp3" level="WARN"/>
+    <!-- Spring 本身日志保留 WARN -->
+    <logger name="org.springframework" level="WARN"/>
+    <logger name="org.apache.catalina" level="WARN"/>
+
+    <!-- 自己的业务代码保留 INFO -->
+    <logger name="com.kingdee.qa" level="INFO"/>
+
+    <root level="WARN">
+        <appender-ref ref="CONSOLE"/>
+        <appender-ref ref="FILE"/>
+    </root>
+
+</configuration>

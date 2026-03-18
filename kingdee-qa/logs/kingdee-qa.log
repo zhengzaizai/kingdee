@@ -1,0 +1,196 @@
+2026-03-18 18:58:11 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 9828 (C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa)
+2026-03-18 18:58:11 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-18 18:58:11 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-18 18:58:13 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa\target\classes\Skills
+2026-03-18 18:58:13 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-18 18:58:13 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-18 18:58:13 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-18 18:58:13 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-18 18:58:14 [INFO] com.kingdee.qa.Main - Started Main in 2.894 seconds (JVM running for 3.305)
+2026-03-18 19:05:08 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 14520 (C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa)
+2026-03-18 19:05:08 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-18 19:05:08 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-18 19:05:11 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-18 19:05:11 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-18 19:05:11 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-7682364907643440907
+2026-03-18 19:05:11 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-7682364907643440907
+2026-03-18 19:05:11 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-18 19:05:11 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-18 19:05:11 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-18 19:05:11 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-18 19:05:12 [INFO] com.kingdee.qa.Main - Started Main in 4.45 seconds (JVM running for 5.061)
+2026-03-18 19:05:26 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-18 19:05:27 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=cf3317a9-bcb1-465e-87bf-cae6f2b4d8f9
+2026-03-18 19:05:27 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-18 19:05:27 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-18 19:05:28 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-18 19:05:28 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库？
+2026-03-18 19:05:32 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-18 19:05:32 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 5561 字符
+2026-03-18 19:05:32 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc 完成，文档长度: 5561 字符
+2026-03-18 19:05:39 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 311
+2026-03-18 19:05:39 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-18 19:05:39 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-18 19:05:39 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=804
+2026-03-18 19:05:39 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 1444 字符
+2026-03-18 19:05:45 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=17229ms 分析=3836ms API=42ms 整理=13351ms 工具调用=2次
+2026-03-18 19:06:03 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 250210找一下这个批号的物料
+2026-03-18 19:06:11 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 323
+2026-03-18 19:06:11 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-18 19:06:11 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-18 19:06:11 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=517
+2026-03-18 19:06:11 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 878 字符
+2026-03-18 19:06:20 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=17246ms 分析=7850ms API=102ms 整理=9294ms 工具调用=1次
+2026-03-18 19:07:05 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 仓库里面哪个物料现在最多
+2026-03-18 19:07:13 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 300
+2026-03-18 19:07:13 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-18 19:07:13 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-18 19:07:13 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=97213
+2026-03-18 19:07:13 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 153224 字符
+2026-03-18 19:07:34 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=28950ms 分析=7382ms API=160ms 整理=21408ms 工具调用=1次
+2026-03-18 19:08:23 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-18 19:08:25 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库？
+2026-03-18 19:08:33 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 311
+2026-03-18 19:08:33 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-18 19:08:33 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-18 19:08:33 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=804
+2026-03-18 19:08:33 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 1444 字符
+2026-03-18 19:08:39 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=13638ms 分析=7674ms API=41ms 整理=5923ms 工具调用=1次
+2026-03-18 19:09:07 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 仓库中哪个物料最多
+2026-03-18 19:09:15 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 300
+2026-03-18 19:09:15 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-18 19:09:15 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-18 19:09:15 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=97213
+2026-03-18 19:09:15 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 153224 字符
+2026-03-18 19:09:40 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=33408ms 分析=8129ms API=96ms 整理=25183ms 工具调用=1次
+2026-03-18 19:10:52 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 你是谁
+2026-03-18 19:10:55 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=2718ms 分析=2718ms API=0ms 整理=0ms 工具调用=0次
+2026-03-18 19:11:13 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 我想看看目前有哪些采购订单
+2026-03-18 19:11:21 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 323
+2026-03-18 19:11:21 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-18 19:11:21 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-18 19:11:22 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=4202
+2026-03-18 19:11:22 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 7403 字符
+2026-03-18 19:11:39 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=25753ms 分析=7579ms API=843ms 整理=17331ms 工具调用=1次
+2026-03-18 19:11:52 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 供应商有哪些呢
+2026-03-18 19:12:03 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 264
+2026-03-18 19:12:03 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-18 19:12:03 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-18 19:12:03 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=195
+2026-03-18 19:12:03 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 49 字符
+2026-03-18 19:12:04 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=11869ms 分析=10419ms API=119ms 整理=1331ms 工具调用=1次
+2026-03-18 19:12:45 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-18 19:12:53 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 你是谁
+2026-03-18 19:12:55 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=2155ms 分析=2155ms API=0ms 整理=0ms 工具调用=0次
+2026-03-18 19:12:59 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-18 19:22:31 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 13600 (C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa)
+2026-03-18 19:22:31 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-18 19:22:31 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-18 19:22:32 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa\target\classes\Skills
+2026-03-18 19:22:32 [WARN] com.kingdee.qa.skill.SkillLoader - C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa\target\classes\Skills\kingdee_query\SKILL.md 格式错误：缺少 YAML frontmatter
+2026-03-18 19:22:32 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-18 19:22:32 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-18 19:22:32 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-18 19:22:33 [INFO] com.kingdee.qa.Main - Started Main in 2.362 seconds (JVM running for 2.687)
+2026-03-18 19:25:25 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 1332 (C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa)
+2026-03-18 19:25:25 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-18 19:25:25 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-18 19:25:27 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-18 19:25:27 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-18 19:25:27 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-2669188186142249088
+2026-03-18 19:25:27 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-2669188186142249088
+2026-03-18 19:25:27 [WARN] com.kingdee.qa.skill.SkillLoader - C:\Users\11877\AppData\Local\Temp\kingdee-skills-2669188186142249088\kingdee_query\SKILL.md 格式错误：缺少 YAML frontmatter
+2026-03-18 19:25:27 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-18 19:25:27 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 1 个技能
+2026-03-18 19:25:28 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-18 19:25:29 [INFO] com.kingdee.qa.Main - Started Main in 4.874 seconds (JVM running for 5.355)
+2026-03-18 19:26:10 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-18 19:26:10 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=f251ba0e-8dc5-4fce-abb1-58596ed39a79
+2026-03-18 19:26:10 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-18 19:26:10 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-18 19:26:29 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-18 19:26:29 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 仓库中数量最多的物料是谁
+2026-03-18 19:26:34 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=5017ms 分析=5017ms API=0ms 整理=0ms 工具调用=0次
+2026-03-18 19:29:28 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 16860 (C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa)
+2026-03-18 19:29:28 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-18 19:29:28 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-18 19:29:29 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa\target\classes\Skills
+2026-03-18 19:29:29 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-18 19:29:29 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-18 19:29:29 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-18 19:29:30 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-18 19:29:30 [INFO] com.kingdee.qa.Main - Started Main in 2.672 seconds (JVM running for 2.974)
+2026-03-18 19:29:45 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-18 19:29:46 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=9232e1a6-ea8b-4b70-ae8e-a41f56a434a2
+2026-03-18 19:29:46 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-18 19:29:46 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-18 19:29:59 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-18 19:29:59 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 仓库中哪个物料最多
+2026-03-18 19:30:03 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-18 19:30:03 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 5751 字符
+2026-03-18 19:30:03 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc 完成，文档长度: 5751 字符
+2026-03-18 19:30:10 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 300
+2026-03-18 19:30:10 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-18 19:30:10 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-18 19:30:11 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=97213
+2026-03-18 19:30:11 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 153224 字符
+2026-03-18 19:30:34 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=35310ms 分析=3674ms API=1314ms 整理=30322ms 工具调用=2次
+2026-03-18 19:32:31 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 你是谁
+2026-03-18 19:32:35 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=3589ms 分析=3589ms API=0ms 整理=0ms 工具调用=0次
+2026-03-18 19:32:56 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 251117找一下这个批号的物料
+2026-03-18 19:33:03 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 323
+2026-03-18 19:33:03 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-18 19:33:03 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-18 19:33:03 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=4885
+2026-03-18 19:33:03 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 8985 字符
+2026-03-18 19:33:26 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=30225ms 分析=7602ms API=124ms 整理=22499ms 工具调用=1次
+2026-03-18 19:34:28 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 250210这个批号的物料有什么
+2026-03-18 19:34:35 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 323
+2026-03-18 19:34:35 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-18 19:34:35 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-18 19:34:35 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=517
+2026-03-18 19:34:35 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 878 字符
+2026-03-18 19:34:41 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=12901ms 分析=6486ms API=74ms 整理=6341ms 工具调用=1次
+2026-03-18 19:45:01 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 960 (C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\king_lang_cursor\kingdee-qa)
+2026-03-18 19:45:01 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-18 19:45:01 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-18 19:45:04 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-18 19:45:04 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-18 19:45:04 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-1698788806968612830
+2026-03-18 19:45:04 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-1698788806968612830
+2026-03-18 19:45:04 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-18 19:45:04 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-18 19:45:04 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-18 19:45:05 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-18 19:45:06 [INFO] com.kingdee.qa.Main - Started Main in 5.239 seconds (JVM running for 5.719)
+2026-03-18 19:45:15 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-18 19:45:15 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=b1e670a5-ffc1-4e01-b20e-609838d6b9a1
+2026-03-18 19:45:15 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-18 19:45:15 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-18 19:45:19 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-18 19:45:19 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库？
+2026-03-18 19:45:22 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-18 19:45:22 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 5751 字符
+2026-03-18 19:45:22 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc 完成，文档长度: 5751 字符
+2026-03-18 19:45:29 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 311
+2026-03-18 19:45:29 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-18 19:45:29 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [callApi] skill=kingdee_query url=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-18 19:45:29 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [callApi] 请求体: {
+  "FormId": "STK_Inventory",
+  "Data": {
+    "FormId": "STK_Inventory",
+    "FieldKeys": "FMATERIALID.FName,FMATERIALID.FNumber,FStockId.FName,FBaseQty",
+    "FilterString": "FMATERIALID.FName='腰托'",
+    "OrderString": "",
+    "TopRowCount": 0,
+    "StartRow": 0,
+    "Limit": 200,
+    "SubSystemId": ""
+  }
+}
+2026-03-18 19:45:30 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [callApi] 耗时=50ms 响应长度=804
+2026-03-18 19:45:30 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [callApi] 原始返回: [["腰托","10000158","1F_成品库",94.0000000000],["腰托","10002211","2F-生产现场仓",20.0000000000],["腰托","10002211","1F_成品库",0.0],["腰托","10002211","1F_成品库",0.0],["腰托","10002211","1F_成品库",0.0],["腰托","10002211","1F_成品库",0.0],["腰托","10002211","1F_成品库",0.0],["腰托","10002211","1F_成品库",0.0],["腰托","10002211","不良品库",0.0],["腰托","10002211","1F_成品库",0.0],["腰托","10002211","1F_成品库",0.0],["腰托","10000158","A栋-成品库",94.0000000000],["腰托","10002211","A栋-成品库",80.0000000000],["腰托","10002211","1F_成品库",0.0],["腰托","10002211","A栋-成品库",0.0],["腰托","10002211","A栋-成品库",48.0000000000],["腰托","10002211","A栋-成品库",48.0000000000],["腰托","10002211","A栋-成品库",0.0],["腰托","10002211","A栋-成品库",0.0],["腰托","10002211","A栋-成品库",0.0],["腰托","10002211","A栋-成品库",16.0000000000],["腰托","10002211","A栋-成品库",64.0000000000],["腰托","10002211","A栋-成品库",32.0000000000]]
+2026-03-18 19:45:30 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [callApi] 解析结果: {"success":true,"total":22,"count":22,"records":[{"腰托":"腰托","10000158":"10002211","1F_成品库":"2F-生产现场仓","94.0":20.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"1F_成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"1F_成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"1F_成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"1F_成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"1F_成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"1F_成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"不良品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"1F_成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"1F_成品库","94.0":0.0},{"腰托":"腰托","10000158":"10000158","1F_成品库":"A栋-成品库","94.0":94.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"A栋-成品库","94.0":80.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"1F_成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"A栋-成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"A栋-成品库","94.0":48.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"A栋-成品库","94.0":48.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"A栋-成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"A栋-成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"A栋-成品库","94.0":0.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"A栋-成品库","94.0":16.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"A栋-成品库","94.0":64.0},{"腰托":"腰托","10000158":"10002211","1F_成品库":"A栋-成品库","94.0":32.0}]}
+2026-03-18 19:45:30 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 1444 字符
+2026-03-18 19:45:35 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=16722ms 分析=3321ms API=50ms 整理=13351ms 工具调用=2次
+2026-03-18 19:46:06 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空

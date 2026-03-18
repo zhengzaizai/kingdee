@@ -1,0 +1,1268 @@
+2026-03-16 10:04:51 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 18644 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 10:04:51 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 10:04:51 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 10:04:52 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-16 10:04:53 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 10:04:53 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 10:04:53 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 10:04:53 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 10:04:53 [INFO] com.kingdee.qa.Main - Started Main in 2.852 seconds (JVM running for 6.387)
+2026-03-16 10:24:50 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 13992 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 10:24:50 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 10:24:51 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 10:24:52 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-16 10:24:52 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 10:24:52 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 10:24:52 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 10:24:52 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 10:24:52 [INFO] com.kingdee.qa.Main - Started Main in 2.235 seconds (JVM running for 2.522)
+2026-03-16 10:25:14 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 10:25:15 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=85bff82c-57fb-4d3e-a065-069ee8171210
+2026-03-16 10:25:15 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 10:25:15 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 10:26:40 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 10:26:40 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=5e3e0617-0d4e-44cf-91b0-b82473433b2f
+2026-03-16 10:26:40 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 10:26:40 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 10:27:00 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成（流式模式），模型: deepseek-chat
+2026-03-16 10:27:00 [INFO] com.kingdee.qa.agent.Agent - 开始无记忆流式处理: “腰托”有多少库存
+2026-03-16 10:32:54 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 12292 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 10:32:54 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 10:32:54 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 10:32:56 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-16 10:32:56 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 10:32:56 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 10:32:56 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 10:32:56 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 10:32:56 [INFO] com.kingdee.qa.Main - Started Main in 2.14 seconds (JVM running for 2.425)
+2026-03-16 10:33:21 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 10:33:21 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=6ae07f85-de74-44a1-96ec-b367997473a9
+2026-03-16 10:33:21 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 10:33:21 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 10:33:25 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成（流式模式），模型: deepseek-chat
+2026-03-16 10:33:25 [INFO] com.kingdee.qa.agent.Agent - 开始无记忆流式处理: 腰托在哪个仓库？
+2026-03-16 10:33:30 [INFO] com.kingdee.qa.agent.Agent - [NoMemory] 完成 总耗时=4215ms 工具=0次
+2026-03-16 10:34:07 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 腰托在哪个仓库？
+2026-03-16 10:34:11 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=4296ms 分析=4296ms API=0ms 整理=0ms 工具=0次
+2026-03-16 10:36:02 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 10:36:03 [INFO] com.kingdee.qa.agent.Agent - 开始无记忆流式处理: 腰托在哪个仓库？
+2026-03-16 10:36:07 [INFO] com.kingdee.qa.agent.Agent - [NoMemory] 完成 总耗时=3754ms 工具=0次
+2026-03-16 10:40:55 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 4716 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 10:40:55 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 10:40:55 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 10:40:56 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-16 10:40:56 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 10:40:56 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 10:40:56 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 10:40:57 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 10:40:57 [INFO] com.kingdee.qa.Main - Started Main in 2.519 seconds (JVM running for 2.914)
+2026-03-16 10:41:11 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 10:41:11 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=f11c9e8c-191a-452c-bc33-e887934f8f84
+2026-03-16 10:41:11 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 10:41:11 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 10:41:15 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成（流式模式），模型: deepseek-chat
+2026-03-16 10:41:15 [INFO] com.kingdee.qa.agent.Agent - 开始无记忆流式处理: 腰托在哪个仓库？
+2026-03-16 10:41:19 [INFO] com.kingdee.qa.agent.Agent - [NoMemory] 完成 总耗时=4224ms 工具=0次
+2026-03-16 10:42:48 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 10:42:50 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 腰托在哪个仓库？
+2026-03-16 10:42:54 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=4465ms 分析=4465ms API=0ms 整理=0ms 工具=0次
+2026-03-16 10:51:34 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 14064 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 10:51:34 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 10:51:34 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 10:51:36 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-16 10:51:36 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 10:51:36 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 10:51:36 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 10:51:36 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 10:51:36 [INFO] com.kingdee.qa.Main - Started Main in 2.33 seconds (JVM running for 2.618)
+2026-03-16 10:51:57 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 10:51:57 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=409592af-9e08-4e69-97f3-736119885b3a
+2026-03-16 10:51:57 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 10:51:57 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 10:52:04 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成（流式模式），模型: deepseek-chat
+2026-03-16 10:52:04 [INFO] com.kingdee.qa.agent.Agent - 开始无记忆流式处理: 腰托在哪个仓库？
+2026-03-16 10:52:07 [INFO] com.kingdee.qa.agent.Agent - [NoMemory] 完成 总耗时=3577ms 工具=0次
+2026-03-16 10:52:42 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 10:52:59 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 腰托在哪个仓库？
+2026-03-16 10:53:04 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=4999ms 分析=4999ms API=0ms 整理=0ms 工具=0次
+2026-03-16 10:54:42 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 10:54:50 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 10:54:50 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=783027cc-1941-44d3-9964-e2ebd8117499
+2026-03-16 10:54:50 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 10:54:50 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 10:55:00 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 腰托在哪个仓库？
+2026-03-16 10:55:07 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=6464ms 分析=6464ms API=0ms 整理=0ms 工具=0次
+2026-03-16 10:55:14 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 为什么不回答了
+2026-03-16 10:55:19 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=4474ms 分析=4474ms API=0ms 整理=0ms 工具=0次
+2026-03-16 10:55:26 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 腰托在哪个仓库？
+2026-03-16 10:55:30 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=4542ms 分析=4542ms API=0ms 整理=0ms 工具=0次
+2026-03-16 10:58:05 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 10:58:13 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成（流式模式），模型: deepseek-chat
+2026-03-16 10:58:13 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 10:58:13 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=2f761859-36ca-4f0d-b275-400084f05e27
+2026-03-16 10:58:13 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 10:58:13 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 10:58:16 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 腰托在哪个仓库？
+2026-03-16 10:58:21 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=4991ms 分析=4991ms API=0ms 整理=0ms 工具=0次
+2026-03-16 10:58:36 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 10:58:37 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=89c97bd4-0a2a-42e4-8484-a961ec6dd3ac
+2026-03-16 10:58:37 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 10:58:37 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 10:58:40 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 10:58:40 [INFO] com.kingdee.qa.agent.Agent - 开始无记忆流式处理: ??
+2026-03-16 10:58:42 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 腰托在哪个仓库？
+2026-03-16 10:58:46 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=4661ms 分析=4661ms API=0ms 整理=0ms 工具=0次
+2026-03-16 10:58:49 [INFO] com.kingdee.qa.agent.Agent - [NoMemory] 完成 总耗时=8699ms 工具=0次
+2026-03-16 10:59:08 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 腰托在哪个仓库？
+2026-03-16 10:59:12 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=4240ms 分析=4240ms API=0ms 整理=0ms 工具=0次
+2026-03-16 11:09:19 [INFO] com.kingdee.qa.Main - Starting Main on zaizai with PID 14892 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 11:09:19 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 11:09:19 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 11:09:20 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\classes\Skills
+2026-03-16 11:09:20 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 11:09:20 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 11:09:20 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 11:09:20 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 11:09:20 [INFO] com.kingdee.qa.Main - Started Main in 2.067 seconds (JVM running for 2.39)
+2026-03-16 11:09:46 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 11:09:46 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=e1639c9d-7709-402d-80dc-f51e4edfc87d
+2026-03-16 11:09:46 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 11:09:46 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 11:09:50 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成（流式模式），模型: deepseek-chat
+2026-03-16 11:09:50 [INFO] com.kingdee.qa.agent.Agent - 开始无记忆流式处理: 腰托在哪个仓库？
+2026-03-16 11:09:54 [INFO] com.kingdee.qa.agent.Agent - [NoMemory] 完成 总耗时=4371ms 工具=0次
+2026-03-16 11:10:31 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 11:10:31 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=96d60eb4-f7f1-4ec0-bfd7-c23359fe38be
+2026-03-16 11:10:31 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 11:10:31 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 11:10:41 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 11:10:47 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 11:10:48 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=b1c855df-2bb4-4ef8-83e9-5bf98ec45a6f
+2026-03-16 11:10:48 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 11:10:48 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 11:10:53 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 腰托在哪个仓库？
+2026-03-16 11:10:58 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=4869ms 分析=4869ms API=0ms 整理=0ms 工具=0次
+2026-03-16 11:12:10 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 11:18:24 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 18424 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 11:18:24 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 11:18:24 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 11:18:27 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+2026-03-16 11:18:27 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'chatController' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/ChatController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sessionStore' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/SessionStore.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+2026-03-16 11:18:27 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'chatController' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/ChatController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sessionStore' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/SessionStore.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.kingdee.qa.Main.main(Main.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sessionStore' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/SessionStore.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 28 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 42 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 56 common frames omitted
+Caused by: java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:94)
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:255)
+	at java.nio.file.Paths.get(Paths.java:84)
+	at com.kingdee.qa.skill.SkillLoader.<init>(SkillLoader.java:40)
+	at com.kingdee.qa.config.AppConfig.skillLoader(AppConfig.java:63)
+	at com.kingdee.qa.config.AppConfig$$EnhancerBySpringCGLIB$$721e93ce.CGLIB$skillLoader$2(<generated>)
+	at com.kingdee.qa.config.AppConfig$$EnhancerBySpringCGLIB$$721e93ce$$FastClassBySpringCGLIB$$ad3f93d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.kingdee.qa.config.AppConfig$$EnhancerBySpringCGLIB$$721e93ce.skillLoader(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 57 common frames omitted
+2026-03-16 11:18:42 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 4508 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 11:18:42 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 11:18:42 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 11:18:45 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+2026-03-16 11:18:45 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'chatController' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/ChatController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sessionStore' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/SessionStore.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+2026-03-16 11:18:45 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'chatController' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/ChatController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sessionStore' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/SessionStore.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.kingdee.qa.Main.main(Main.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sessionStore' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/SessionStore.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 28 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 42 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 56 common frames omitted
+Caused by: java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:94)
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:255)
+	at java.nio.file.Paths.get(Paths.java:84)
+	at com.kingdee.qa.skill.SkillLoader.<init>(SkillLoader.java:40)
+	at com.kingdee.qa.config.AppConfig.skillLoader(AppConfig.java:63)
+	at com.kingdee.qa.config.AppConfig$$EnhancerBySpringCGLIB$$e192b062.CGLIB$skillLoader$6(<generated>)
+	at com.kingdee.qa.config.AppConfig$$EnhancerBySpringCGLIB$$e192b062$$FastClassBySpringCGLIB$$8b4e76a1.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.kingdee.qa.config.AppConfig$$EnhancerBySpringCGLIB$$e192b062.skillLoader(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 57 common frames omitted
+2026-03-16 11:19:53 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 9744 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 11:19:53 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 11:19:53 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 11:19:55 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+2026-03-16 11:19:55 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'chatController' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/ChatController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sessionStore' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/SessionStore.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+2026-03-16 11:19:55 [ERROR] o.s.boot.SpringApplication - Application run failed
+org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'chatController' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/ChatController.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sessionStore' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/SessionStore.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.preInstantiateSingletons(DefaultListableBeanFactory.java:897)
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:879)
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:551)
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:143)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:758)
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:750)
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1237)
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226)
+	at com.kingdee.qa.Main.main(Main.java:16)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.boot.loader.MainMethodRunner.run(MainMethodRunner.java:49)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:107)
+	at org.springframework.boot.loader.Launcher.launch(Launcher.java:58)
+	at org.springframework.boot.loader.JarLauncher.main(JarLauncher.java:88)
+Caused by: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'sessionStore' defined in URL [jar:file:/C:/Users/11877/Desktop/kingdee-cursor/kingdee-qa/target/kingdee-qa-1.0.0.jar!/BOOT-INF/classes!/com/kingdee/qa/web/SessionStore.class]: Unsatisfied dependency expressed through constructor parameter 0; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:797)
+	at org.springframework.beans.factory.support.ConstructorResolver.autowireConstructor(ConstructorResolver.java:227)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.autowireConstructor(AbstractAutowireCapableBeanFactory.java:1356)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1203)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 28 common frames omitted
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'skillLoader' defined in class path resource [com/kingdee/qa/config/AppConfig.class]: Bean instantiation via factory method failed; nested exception is org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:655)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiateUsingFactoryMethod(ConstructorResolver.java:483)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.instantiateUsingFactoryMethod(AbstractAutowireCapableBeanFactory.java:1336)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBeanInstance(AbstractAutowireCapableBeanFactory.java:1176)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:556)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322)
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:202)
+	at org.springframework.beans.factory.config.DependencyDescriptor.resolveCandidate(DependencyDescriptor.java:276)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1307)
+	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
+	at org.springframework.beans.factory.support.ConstructorResolver.resolveAutowiredArgument(ConstructorResolver.java:884)
+	at org.springframework.beans.factory.support.ConstructorResolver.createArgumentArray(ConstructorResolver.java:788)
+	... 42 common frames omitted
+Caused by: org.springframework.beans.BeanInstantiationException: Failed to instantiate [com.kingdee.qa.skill.SkillLoader]: Factory method 'skillLoader' threw exception; nested exception is java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:185)
+	at org.springframework.beans.factory.support.ConstructorResolver.instantiate(ConstructorResolver.java:650)
+	... 56 common frames omitted
+Caused by: java.nio.file.InvalidPathException: Illegal char <:> at index 53: C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\file:\C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar!\BOOT-INF\classes!\Skills
+	at sun.nio.fs.WindowsPathParser.normalize(WindowsPathParser.java:182)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:153)
+	at sun.nio.fs.WindowsPathParser.parse(WindowsPathParser.java:77)
+	at sun.nio.fs.WindowsPath.parse(WindowsPath.java:94)
+	at sun.nio.fs.WindowsFileSystem.getPath(WindowsFileSystem.java:255)
+	at java.nio.file.Paths.get(Paths.java:84)
+	at com.kingdee.qa.skill.SkillLoader.<init>(SkillLoader.java:40)
+	at com.kingdee.qa.config.AppConfig.skillLoader(AppConfig.java:63)
+	at com.kingdee.qa.config.AppConfig$$EnhancerBySpringCGLIB$$721e93ce.CGLIB$skillLoader$4(<generated>)
+	at com.kingdee.qa.config.AppConfig$$EnhancerBySpringCGLIB$$721e93ce$$FastClassBySpringCGLIB$$ad3f93d.invoke(<generated>)
+	at org.springframework.cglib.proxy.MethodProxy.invokeSuper(MethodProxy.java:244)
+	at org.springframework.context.annotation.ConfigurationClassEnhancer$BeanMethodInterceptor.intercept(ConfigurationClassEnhancer.java:331)
+	at com.kingdee.qa.config.AppConfig$$EnhancerBySpringCGLIB$$721e93ce.skillLoader(<generated>)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.beans.factory.support.SimpleInstantiationStrategy.instantiate(SimpleInstantiationStrategy.java:154)
+	... 57 common frames omitted
+2026-03-16 11:24:23 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 9360 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 11:24:23 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 11:24:24 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 11:24:27 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 11:24:27 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 11:24:27 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-4634665396934013918
+2026-03-16 11:24:27 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-4634665396934013918
+2026-03-16 11:24:27 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 11:24:27 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 11:24:27 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 11:24:27 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 11:24:28 [INFO] com.kingdee.qa.Main - Started Main in 5.355 seconds (JVM running for 5.933)
+2026-03-16 11:25:03 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成（流式模式），模型: deepseek-chat
+2026-03-16 11:25:03 [INFO] com.kingdee.qa.agent.Agent - 开始无记忆流式处理: ??
+2026-03-16 11:25:11 [INFO] com.kingdee.qa.agent.Agent - [NoMemory] 完成 总耗时=8095ms 工具=0次
+2026-03-16 11:32:43 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 20764 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 11:32:43 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 11:32:43 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 11:32:45 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 11:32:45 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 11:32:45 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-354417583649131983
+2026-03-16 11:32:45 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-354417583649131983
+2026-03-16 11:32:45 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 11:32:45 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 11:32:45 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 11:32:46 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 11:32:47 [INFO] com.kingdee.qa.Main - Started Main in 4.9 seconds (JVM running for 5.463)
+2026-03-16 11:32:58 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 11:32:58 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=43fce0c5-a03d-4b72-873d-75110f242ae1
+2026-03-16 11:32:58 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 11:32:58 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 11:33:03 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成（流式模式），模型: deepseek-chat
+2026-03-16 11:33:03 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 腰托在哪个仓库？
+2026-03-16 11:33:09 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=5849ms 分析=5849ms API=0ms 整理=0ms 工具=0次
+2026-03-16 11:34:07 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 11:34:07 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=f9fa1294-c62f-4a8e-8233-1d1cd41b3d36
+2026-03-16 11:34:07 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 11:34:07 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 11:34:11 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 11:34:11 [INFO] com.kingdee.qa.agent.Agent - 开始流式处理用户问题: 腰托在哪个仓库？
+2026-03-16 11:34:16 [INFO] com.kingdee.qa.agent.Agent - 流式处理完成 总耗时=4821ms 分析=4821ms API=0ms 整理=0ms 工具=0次
+2026-03-16 12:46:26 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 2340 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 12:46:26 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 12:46:26 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 12:46:28 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 12:46:28 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 12:46:28 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-3267544557634880829
+2026-03-16 12:46:28 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-3267544557634880829
+2026-03-16 12:46:28 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 12:46:28 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 12:46:28 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 12:46:29 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 12:46:30 [INFO] com.kingdee.qa.Main - Started Main in 4.237 seconds (JVM running for 4.715)
+2026-03-16 12:46:46 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 12:46:46 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=93fbef26-fd96-4ade-aa1b-c65da81bddb2
+2026-03-16 12:46:46 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 12:46:46 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 12:46:50 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-16 12:46:50 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库？
+2026-03-16 12:46:54 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:46:54 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2311 字符
+2026-03-16 12:46:57 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:01 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:04 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:08 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:11 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:15 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:18 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:22 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:26 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:29 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:33 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:37 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:41 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:44 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:47 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:51 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:56 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:47:59 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:02 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:05 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:09 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:12 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:16 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:19 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:23 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:26 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:30 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:33 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:37 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:40 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:44 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:48 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:52 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:48:56 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:00 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:04 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:07 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:12 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:15 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 20424 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 12:49:15 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 12:49:15 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 12:49:16 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:17 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 12:49:17 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 12:49:17 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-1646407903996393458
+2026-03-16 12:49:17 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-1646407903996393458
+2026-03-16 12:49:17 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 12:49:17 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 12:49:17 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 12:49:18 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 12:49:18 [WARN] o.s.b.w.s.c.AnnotationConfigServletWebServerApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.context.ApplicationContextException: Failed to start bean 'webServerStartStop'; nested exception is org.springframework.boot.web.server.PortInUseException: Port 8080 is already in use
+2026-03-16 12:49:18 [ERROR] o.s.b.d.LoggingFailureAnalysisReporter - 
+
+***************************
+APPLICATION FAILED TO START
+***************************
+
+Description:
+
+Web server failed to start. Port 8080 was already in use.
+
+Action:
+
+Identify and stop the process that's listening on port 8080 or configure this application to listen on another port.
+
+2026-03-16 12:49:19 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:23 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:27 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:30 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:34 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:38 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:38 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-16 12:49:39 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 你好
+2026-03-16 12:49:42 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:46 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:46 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=7709ms 分析=7709ms API=0ms 整理=0ms 工具调用=0次
+2026-03-16 12:49:49 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:53 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:49:57 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:01 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:04 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:08 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:12 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:16 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:19 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:23 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:26 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:30 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:34 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:37 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:40 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:44 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:48 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:52 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:50:56 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:00 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:03 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:07 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:11 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:14 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:18 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:22 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:26 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:30 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:34 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:37 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:42 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:45 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:49 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:53 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:51:56 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:00 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:04 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:08 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:12 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:15 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:19 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:23 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:26 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:30 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:34 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:38 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:41 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:45 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:49 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:53 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:52:57 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:53:01 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:53:05 [ERROR] com.kingdee.qa.agent.Agent - Agent 处理失败: Something is wrong, exceeded 100 sequential tool executions
+2026-03-16 12:53:29 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托的库存有多少
+2026-03-16 12:53:33 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:53:42 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-16 12:53:42 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 12:53:42 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 12:53:42 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=4291
+2026-03-16 12:54:06 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=36552ms 分析=3886ms API=827ms 整理=31839ms 工具调用=2次
+2026-03-16 12:54:26 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 目前我都有哪些仓库
+2026-03-16 12:54:30 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:54:34 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:54:38 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:54:42 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:54:45 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:54:49 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:54:53 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:54:57 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:55:02 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:55:07 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:55:11 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:55:15 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:55:19 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:55:23 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:55:27 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 12:55:27 [WARN] dev.langchain4j.internal.RetryUtils - Exception was thrown on attempt 1 of 3
+java.lang.RuntimeException: java.io.InterruptedIOException: interrupted
+	at dev.ai4j.openai4j.SyncRequestExecutor.execute(SyncRequestExecutor.java:31)
+	at dev.ai4j.openai4j.RequestExecutor.execute(RequestExecutor.java:59)
+	at dev.langchain4j.model.openai.OpenAiChatModel.lambda$generate$1(OpenAiChatModel.java:246)
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192)
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229)
+	at dev.langchain4j.model.openai.OpenAiChatModel.generate(OpenAiChatModel.java:246)
+	at dev.langchain4j.model.openai.OpenAiChatModel.generate(OpenAiChatModel.java:176)
+	at dev.langchain4j.service.DefaultAiServices$1.invoke(DefaultAiServices.java:269)
+	at com.kingdee.qa.agent.$Proxy86.chat(Unknown Source)
+	at com.kingdee.qa.agent.Agent.chat(Agent.java:156)
+	at com.kingdee.qa.web.ChatController.chat(ChatController.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.InterruptedIOException: interrupted
+	at okio.Timeout.throwIfReached(Timeout.kt:99)
+	at okio.OutputStreamSink.write(JvmOkio.kt:53)
+	at okio.AsyncTimeout$sink$1.write(AsyncTimeout.kt:102)
+	at okio.RealBufferedSink.flush(RealBufferedSink.kt:268)
+	at okhttp3.internal.http1.Http1ExchangeCodec.finishRequest(Http1ExchangeCodec.kt:155)
+	at okhttp3.internal.connection.Exchange.finishRequest(Exchange.kt:95)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at dev.ai4j.openai4j.GenericHeaderInjector.intercept(GenericHeaderInjector.java:27)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at dev.ai4j.openai4j.GenericHeaderInjector.intercept(GenericHeaderInjector.java:27)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at retrofit2.OkHttpCall.execute(OkHttpCall.java:204)
+	at dev.ai4j.openai4j.SyncRequestExecutor.execute(SyncRequestExecutor.java:23)
+	... 64 common frames omitted
+	Suppressed: java.io.InterruptedIOException: interrupted
+		at okio.Timeout.throwIfReached(Timeout.kt:99)
+		at okio.InputStreamSource.read(JvmOkio.kt:90)
+		at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:128)
+		at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:430)
+		at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:323)
+		at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+		at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:180)
+		at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:110)
+		at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:93)
+		... 81 common frames omitted
+2026-03-16 13:19:37 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 3988 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 13:19:37 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 13:19:38 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 13:19:40 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 13:19:40 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 13:19:40 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-343553282811798347
+2026-03-16 13:19:40 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-343553282811798347
+2026-03-16 13:19:40 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 13:19:40 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 13:19:40 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 13:19:41 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 13:19:41 [INFO] com.kingdee.qa.Main - Started Main in 4.526 seconds (JVM running for 5.103)
+2026-03-16 13:20:00 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 13:20:00 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=6e3b63d6-83d3-40f8-80ee-ce3de4c54170
+2026-03-16 13:20:00 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 13:20:00 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 13:20:03 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-16 13:20:03 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库？
+2026-03-16 13:20:07 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:20:07 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2311 字符
+2026-03-16 13:20:17 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-16 13:20:17 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 13:20:17 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 13:20:17 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=4291
+2026-03-16 13:20:39 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=36405ms 分析=4210ms API=47ms 整理=32148ms 工具调用=2次
+2026-03-16 13:21:01 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 1F_成品库哪个物件是最多的
+2026-03-16 13:21:10 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-16 13:21:10 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 13:21:10 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 13:21:10 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=994
+2026-03-16 13:21:24 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=22672ms 分析=8344ms API=96ms 整理=14232ms 工具调用=1次
+2026-03-16 13:21:38 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 13:21:46 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库？
+2026-03-16 13:21:50 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:21:54 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:21:58 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:02 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:06 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:10 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:14 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:18 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:23 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:27 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:31 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:35 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:39 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:43 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:46 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:51 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:55 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:22:59 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:23:02 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:23:06 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:23:06 [WARN] dev.langchain4j.internal.RetryUtils - Exception was thrown on attempt 1 of 3
+java.lang.RuntimeException: java.io.InterruptedIOException: interrupted
+	at dev.ai4j.openai4j.SyncRequestExecutor.execute(SyncRequestExecutor.java:31)
+	at dev.ai4j.openai4j.RequestExecutor.execute(RequestExecutor.java:59)
+	at dev.langchain4j.model.openai.OpenAiChatModel.lambda$generate$1(OpenAiChatModel.java:246)
+	at dev.langchain4j.internal.RetryUtils$RetryPolicy.withRetry(RetryUtils.java:192)
+	at dev.langchain4j.internal.RetryUtils.withRetry(RetryUtils.java:229)
+	at dev.langchain4j.model.openai.OpenAiChatModel.generate(OpenAiChatModel.java:246)
+	at dev.langchain4j.model.openai.OpenAiChatModel.generate(OpenAiChatModel.java:176)
+	at dev.langchain4j.service.DefaultAiServices$1.invoke(DefaultAiServices.java:269)
+	at com.kingdee.qa.agent.$Proxy86.chat(Unknown Source)
+	at com.kingdee.qa.agent.Agent.chat(Agent.java:156)
+	at com.kingdee.qa.web.ChatController.chat(ChatController.java:122)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
+	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
+	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
+	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:652)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:733)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:231)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.tomcat.websocket.server.WsFilter.doFilter(WsFilter.java:53)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.boot.actuate.metrics.web.servlet.WebMvcMetricsFilter.doFilterInternal(WebMvcMetricsFilter.java:93)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201)
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:119)
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:193)
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:166)
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:202)
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:97)
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:542)
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:143)
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:92)
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:78)
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:343)
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:374)
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:65)
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:868)
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1590)
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:49)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61)
+	at java.lang.Thread.run(Thread.java:748)
+Caused by: java.io.InterruptedIOException: interrupted
+	at okio.Timeout.throwIfReached(Timeout.kt:99)
+	at okio.OutputStreamSink.write(JvmOkio.kt:53)
+	at okio.AsyncTimeout$sink$1.write(AsyncTimeout.kt:102)
+	at okio.RealBufferedSink.flush(RealBufferedSink.kt:268)
+	at okhttp3.internal.http1.Http1ExchangeCodec.finishRequest(Http1ExchangeCodec.kt:155)
+	at okhttp3.internal.connection.Exchange.finishRequest(Exchange.kt:95)
+	at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:79)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.ConnectInterceptor.intercept(ConnectInterceptor.kt:34)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.cache.CacheInterceptor.intercept(CacheInterceptor.kt:95)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.BridgeInterceptor.intercept(BridgeInterceptor.kt:83)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.http.RetryAndFollowUpInterceptor.intercept(RetryAndFollowUpInterceptor.kt:76)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at dev.ai4j.openai4j.GenericHeaderInjector.intercept(GenericHeaderInjector.java:27)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at dev.ai4j.openai4j.GenericHeaderInjector.intercept(GenericHeaderInjector.java:27)
+	at okhttp3.internal.http.RealInterceptorChain.proceed(RealInterceptorChain.kt:109)
+	at okhttp3.internal.connection.RealCall.getResponseWithInterceptorChain$okhttp(RealCall.kt:201)
+	at okhttp3.internal.connection.RealCall.execute(RealCall.kt:154)
+	at retrofit2.OkHttpCall.execute(OkHttpCall.java:204)
+	at dev.ai4j.openai4j.SyncRequestExecutor.execute(SyncRequestExecutor.java:23)
+	... 64 common frames omitted
+	Suppressed: java.io.InterruptedIOException: interrupted
+		at okio.Timeout.throwIfReached(Timeout.kt:99)
+		at okio.InputStreamSource.read(JvmOkio.kt:90)
+		at okio.AsyncTimeout$source$1.read(AsyncTimeout.kt:128)
+		at okio.RealBufferedSource.indexOf(RealBufferedSource.kt:430)
+		at okio.RealBufferedSource.readUtf8LineStrict(RealBufferedSource.kt:323)
+		at okhttp3.internal.http1.HeadersReader.readLine(HeadersReader.kt:29)
+		at okhttp3.internal.http1.Http1ExchangeCodec.readResponseHeaders(Http1ExchangeCodec.kt:180)
+		at okhttp3.internal.connection.Exchange.readResponseHeaders(Exchange.kt:110)
+		at okhttp3.internal.http.CallServerInterceptor.intercept(CallServerInterceptor.kt:93)
+		... 81 common frames omitted
+2026-03-16 13:24:52 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 2372 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 13:24:52 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 13:24:52 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 13:24:54 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 13:24:54 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 13:24:54 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-8058371187478082824
+2026-03-16 13:24:54 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-8058371187478082824
+2026-03-16 13:24:54 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 13:24:54 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 13:24:54 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 13:24:55 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 13:24:56 [INFO] com.kingdee.qa.Main - Started Main in 4.242 seconds (JVM running for 4.767)
+2026-03-16 13:25:20 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 13:25:21 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=57729d41-aa8e-4fc2-a905-d62ffd43ae84
+2026-03-16 13:25:21 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 13:25:21 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 13:25:43 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-16 13:25:43 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库？
+2026-03-16 13:25:47 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:25:47 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2311 字符
+2026-03-16 13:25:56 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-16 13:25:56 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 13:25:56 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 13:25:57 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=4291
+2026-03-16 13:26:17 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=34541ms 分析=4253ms API=51ms 整理=30237ms 工具调用=2次
+2026-03-16 13:26:23 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 13:26:28 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库？
+2026-03-16 13:26:32 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:26:41 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-16 13:26:41 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 13:26:41 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 13:26:41 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=4291
+2026-03-16 13:27:03 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=34912ms 分析=4249ms API=45ms 整理=30618ms 工具调用=2次
+2026-03-16 13:27:20 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 1F_成品库什么物料数量最多
+2026-03-16 13:27:25 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:27:36 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-16 13:27:36 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 13:27:36 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 13:27:36 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=5022
+2026-03-16 13:27:46 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-16 13:27:46 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 13:27:46 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 13:27:47 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=484
+2026-03-16 13:28:06 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=45233ms 分析=4828ms API=176ms 整理=40229ms 工具调用=3次
+2026-03-16 13:29:02 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 副驾坐垫悬挂，这个物料在各个仓库的有多少件
+2026-03-16 13:29:06 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:29:17 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-16 13:29:17 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 13:29:17 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 13:29:17 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=3385
+2026-03-16 13:29:27 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-16 13:29:27 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 13:29:27 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 13:29:27 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=7887
+2026-03-16 13:29:46 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=43882ms 分析=4713ms API=100ms 整理=39069ms 工具调用=3次
+2026-03-16 13:30:28 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 你是谁
+2026-03-16 13:30:37 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=9742ms 分析=9742ms API=0ms 整理=0ms 工具调用=0次
+2026-03-16 13:30:59 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 我有那些供应商呢
+2026-03-16 13:31:04 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 13:31:13 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query
+2026-03-16 13:31:13 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 13:31:13 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 13:31:14 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=195
+2026-03-16 13:31:20 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=21439ms 分析=4746ms API=346ms 整理=16347ms 工具调用=2次
+2026-03-16 13:33:56 [INFO] com.kingdee.qa.web.ChatController - [OCR] 收到图片，大小: 200082 bytes
+2026-03-16 13:33:56 [INFO] c.kingdee.qa.http.BaiduTokenService - [百度OCR] Access Token 已刷新
+2026-03-16 13:34:04 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 图片中有几个批号
+
+【图片文字】
+。金蝶云星空四
+计划测试」100逸航汽车零部件无锡有限公司√
+QP'②manager
+◆出即时库存×
+过滤
+刷新
+明细
+打印
+预览
+引出√
+预留综合查询
+选项退出
+@
+我的方案默认方案货主+物料
+库存组织+仓库库存组织+物料
+快捷过滤物料编码
+包含
+请选择内容后回车查询
+仓库编码包含
+请选择内容后回车查询
+Q每保存重置
+物编码
+物料名称
+规格型号
+仓库名称
+批号、
+库存主单位
+库存量（主单位）
+库存组织
+☐10004325
+6+2阀组总成
+T1J白制二代
+4F恒温仓库
+250911
+Pcs
+560逸航汽车零部件无锡有限公司
+☐10005667
+阀组PCBA
+EH3(含程序)主驾
+厦门微能工厂仓库
+250911
+Pcs
+1,200逸航汽车零部件无锡有限公司
+10003447
+阀组PCBA
+EH3副驾
+厦门微能工厂仓库
+250911
+Pcs
+1,200逸航汽车零部件无锡有限公司
+10005411
+气袋安装板
+C673-6
+2F-生产现场仓
+250911
+Pcs
+810逸航汽车零部件无锡有限公司
+10005988
+安装板
+VX11
+2F-生产现场仓
+250911
+Pcs
+2,000逸航汽车零部件无锡有限公司
+10006308
+阀组总成
+C095-10副驾
+4F-生产现场仓
+250911
+Pcs
+1逸航汽车零部件无锡有限公司
+10007137
+坐垫按摩气袋固定板-右
+S31L-RR-高配
+2F-生产现场仓
+250911
+Pcs
+770逸航汽车零部件无锡有限公司
+97001090
+PE袋
+60*60cm
+2F-生产现场仓
+250911
+Pcs
+6,000逸航汽车零部件无锡有限公司
+0
+20004278
+网格胶带撕手
+30mm
+2F原材料库
+250911
+卷
+20逸航汽车季部件无锡有限公司
+10006309
+阀组总成
+C095-10副驾中医
+4F-生产现场仓
+250910
+Pcs
+350逸航汽车零部件无锡有限公司
+■
+10003162
+阀组总成-右靠背
+EF1E
+4F-生产现场仓
+250910
+Pcs
+51逸航汽车季部件无锡有限公司
+10003164
+阀组总成-右坐垫
+EF1E
+4F-生产现场仓
+250910
+Pcs
+64逸航汽车零部件无锡有限公司
+10007143
+阀组组件
+923D/480D-副驾8点按摩
+4F-生产现场仓
+250910
+15逸航汽车季部件无锡有限公司
+☐10006712
+扎带
+156-01010|T50REC22
+2F原材料库
+250910
+Pcs
+695逸航汽，车零部件无锡有限公司
+☐10005670
+按摩腰托总成
+S401MCA2副驾改款
+2F-生产现场仓
+250910
+Pcs
+13逸航汽车季部件无锡有限公司
+80,266,887.78255
+①2
+3
+4
+5678
+匣
+已选0行第1页/*页K〈〉>引每页显示1500~行/供行《
+2026-03-16 13:34:24 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=19578ms 分析=19578ms API=0ms 整理=0ms 工具调用=0次
+2026-03-16 13:34:44 [INFO] com.kingdee.qa.agent.Agent - 对话历史已清空
+2026-03-16 21:00:13 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 17128 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 21:00:13 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 21:00:13 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 21:00:16 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 21:00:16 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 21:00:16 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-9070506814719621136
+2026-03-16 21:00:16 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-9070506814719621136
+2026-03-16 21:00:16 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 21:00:16 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 21:00:16 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 21:00:17 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 21:00:17 [INFO] com.kingdee.qa.Main - Started Main in 4.668 seconds (JVM running for 5.155)
+2026-03-16 21:00:40 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 21:00:40 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=33df1cda-d41f-4e87-a2e0-2ffd6f97a191
+2026-03-16 21:00:40 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 21:00:40 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 21:00:42 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-16 21:00:42 [INFO] com.kingdee.qa.agent.Agent - [Stream] 开始处理: 腰托在哪个仓库？
+2026-03-16 21:00:47 [INFO] com.kingdee.qa.agent.Agent - [Stream] 完成 总耗时=4935ms
+2026-03-16 21:12:22 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 15180 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 21:12:22 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 21:12:22 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 21:12:25 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 21:12:25 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 21:12:25 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-4207154464947607768
+2026-03-16 21:12:25 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-4207154464947607768
+2026-03-16 21:12:25 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 21:12:25 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 21:12:25 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 21:12:25 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 21:12:26 [INFO] com.kingdee.qa.Main - Started Main in 4.149 seconds (JVM running for 4.758)
+2026-03-16 21:13:58 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 21:13:59 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=1284f89b-b727-4b80-8e1b-04e6b259f83f
+2026-03-16 21:13:59 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 21:13:59 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 21:14:06 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-16 21:14:07 [INFO] com.kingdee.qa.agent.Agent - [Stream] 开始处理: 腰托在哪个仓库？
+2026-03-16 21:14:11 [INFO] com.kingdee.qa.agent.Agent - [Stream] 完成 总耗时=4662ms
+2026-03-16 21:22:49 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 6212 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 21:22:49 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 21:22:49 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 21:22:51 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 21:22:51 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 21:22:51 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-6660439456324047712
+2026-03-16 21:22:51 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-6660439456324047712
+2026-03-16 21:22:51 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 21:22:51 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 21:22:51 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 21:22:52 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 21:22:53 [INFO] com.kingdee.qa.Main - Started Main in 4.674 seconds (JVM running for 5.119)
+2026-03-16 21:23:31 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 21:23:31 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=f68cb8ec-ed98-49c7-a217-08d665fc7771
+2026-03-16 21:23:31 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 21:23:31 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 21:23:35 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-16 21:23:35 [INFO] com.kingdee.qa.agent.Agent - [Stream] 开始处理: 腰托在哪个仓库？
+2026-03-16 21:23:40 [INFO] com.kingdee.qa.agent.Agent - [Stream] 完成 总耗时=5111ms
+2026-03-16 21:27:47 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 5108 (C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-cursor\kingdee-qa)
+2026-03-16 21:27:47 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 21:27:47 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 21:27:49 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 21:27:49 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 21:27:49 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-272971525909306612
+2026-03-16 21:27:49 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-272971525909306612
+2026-03-16 21:27:49 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 21:27:49 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 21:27:49 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 21:27:50 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 21:27:50 [INFO] com.kingdee.qa.Main - Started Main in 3.893 seconds (JVM running for 4.377)
+2026-03-16 21:28:07 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 21:28:07 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=120348e5-e262-46e5-bfbe-9b07a1a99efe
+2026-03-16 21:28:07 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 21:28:07 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 21:28:10 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-16 21:28:11 [INFO] com.kingdee.qa.agent.Agent - [Stream] 开始处理: 腰托在哪个仓库？
+2026-03-16 21:28:16 [INFO] com.kingdee.qa.agent.Agent - [Stream] 完成 总耗时=5445ms
+2026-03-16 21:33:19 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 15468 (C:\Users\11877\Desktop\kingdee-kiro\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-kiro\kingdee-qa)
+2026-03-16 21:33:19 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 21:33:19 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 21:33:22 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 21:33:22 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 21:33:22 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-636997036470041870
+2026-03-16 21:33:22 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-636997036470041870
+2026-03-16 21:33:22 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 21:33:22 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 21:33:22 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 21:33:22 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 21:33:23 [INFO] com.kingdee.qa.Main - Started Main in 4.406 seconds (JVM running for 4.971)
+2026-03-16 21:33:40 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 21:33:41 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=b437469e-cba3-48aa-a4b9-967170c185ac
+2026-03-16 21:33:41 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 21:33:41 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 21:33:43 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-16 21:33:43 [INFO] com.kingdee.qa.agent.Agent - [Stream] 开始处理: 腰托在哪个仓库？
+2026-03-16 21:33:48 [INFO] com.kingdee.qa.agent.Agent - [Stream] 完成 总耗时=5222ms
+2026-03-16 21:42:35 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 11696 (C:\Users\11877\Desktop\kingdee-kiro\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-kiro\kingdee-qa)
+2026-03-16 21:42:35 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 21:42:35 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 21:42:37 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 21:42:37 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 21:42:37 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-3056097965149134962
+2026-03-16 21:42:37 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-3056097965149134962
+2026-03-16 21:42:37 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 21:42:37 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 21:42:37 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 21:42:38 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 21:42:38 [INFO] com.kingdee.qa.Main - Started Main in 4.06 seconds (JVM running for 5.026)
+2026-03-16 21:42:55 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 21:42:55 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=1bd00335-c789-436b-bc02-beea76b7ccb3
+2026-03-16 21:42:55 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 21:42:55 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 21:42:57 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-16 21:42:57 [INFO] com.kingdee.qa.agent.Agent - [Stream] 开始处理: 腰托在哪个仓库？
+2026-03-16 21:43:02 [INFO] com.kingdee.qa.agent.Agent - [Stream] 完成 总耗时=4949ms
+2026-03-16 21:43:42 [INFO] com.kingdee.qa.agent.Agent - [Stream] 开始处理: 腰托在哪个仓库？
+2026-03-16 21:43:46 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 21:43:46 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2311 字符
+2026-03-16 21:43:46 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc 完成，文档长度: 2311 字符
+2026-03-16 21:43:57 [INFO] com.kingdee.qa.agent.Agent - [Stream] 完成 总耗时=14183ms
+2026-03-16 21:55:23 [INFO] com.kingdee.qa.Main - Starting Main v1.0.0 on zaizai with PID 16772 (C:\Users\11877\Desktop\kingdee-kiro\kingdee-qa\target\kingdee-qa-1.0.0.jar started by admin in C:\Users\11877\Desktop\kingdee-kiro\kingdee-qa)
+2026-03-16 21:55:23 [INFO] com.kingdee.qa.Main - No active profile set, falling back to default profiles: default
+2026-03-16 21:55:23 [WARN] o.s.h.c.j.Jackson2ObjectMapperBuilder - For Jackson Kotlin classes support please add "com.fasterxml.jackson.module:jackson-module-kotlin" to the classpath
+2026-03-16 21:55:25 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_query
+2026-03-16 21:55:25 [INFO] com.kingdee.qa.config.AppConfig - 已解压技能: kingdee_save
+2026-03-16 21:55:25 [INFO] com.kingdee.qa.config.AppConfig - Skills 已解压到临时目录: C:\Users\11877\AppData\Local\Temp\kingdee-skills-7999110408222013018
+2026-03-16 21:55:25 [INFO] com.kingdee.qa.config.AppConfig - 技能目录路径: C:\Users\11877\AppData\Local\Temp\kingdee-skills-7999110408222013018
+2026-03-16 21:55:25 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_query - 查询金蝶ERP系统单据数据。支持即时库存、采购订单、销售订单、物料、供应商、客户、仓库等各类数据查询。使用 callApi 工具调用，skillName 填 kingdee_query。
+2026-03-16 21:55:25 [INFO] com.kingdee.qa.skill.SkillLoader - 发现技能: kingdee_save - 保存金蝶ERP单据，支持新增和修改各类单据，包括采购订单、销售订单、收料通知单、生产订单等。保存后单据处于暂存或草稿状态，需要再提交和审核才能生效。
+2026-03-16 21:55:25 [INFO] com.kingdee.qa.skill.SkillLoader - 共发现 2 个技能
+2026-03-16 21:55:26 [INFO] com.kingdee.qa.config.AppConfig - 未配置金蝶账号凭据，请通过页面右上角登录入口登录
+2026-03-16 21:55:26 [INFO] com.kingdee.qa.Main - Started Main in 3.917 seconds (JVM running for 4.562)
+2026-03-16 21:55:52 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 账套=69325ee82d4640, 用户=manager
+2026-03-16 21:55:52 [INFO] c.kingdee.qa.http.KingdeeAuthService - [金蝶登录] 成功，SessionId=c9e7b746-8b63-4ae1-bf96-203456c6edd1
+2026-03-16 21:55:52 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] SessionId 已更新
+2026-03-16 21:55:52 [INFO] com.kingdee.qa.web.ChatController - [前端登录] 用户 manager 登录成功
+2026-03-16 21:55:56 [INFO] com.kingdee.qa.agent.Agent - Agent 初始化完成，模型: deepseek-chat
+2026-03-16 21:55:56 [INFO] com.kingdee.qa.agent.Agent - [Stream] 开始处理: 腰托在哪个仓库？
+2026-03-16 21:55:56 [INFO] com.kingdee.qa.agent.Agent - 开始处理用户问题: 腰托在哪个仓库？
+2026-03-16 21:56:01 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc skillName=kingdee_query
+2026-03-16 21:56:01 [INFO] com.kingdee.qa.skill.SkillLoader - 技能 kingdee_query 已激活，文档 2311 字符
+2026-03-16 21:56:01 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] getSkillDoc 完成，文档长度: 2311 字符
+2026-03-16 21:56:12 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 318
+2026-03-16 21:56:12 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 21:56:12 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 21:56:13 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=4291
+2026-03-16 21:56:13 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 7759 字符
+2026-03-16 21:56:25 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi skillName=kingdee_query, requestBody 长度: 313
+2026-03-16 21:56:25 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] skillName=kingdee_query
+2026-03-16 21:56:25 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] URL=http://8.159.146.158/k3cloud/Kingdee.BOS.WebApi.ServicesStub.DynamicFormService.ExecuteBillQuery.common.kdsvc
+2026-03-16 21:56:25 [INFO] com.kingdee.qa.skill.KingdeeApiTool - [KingdeeApiTool] 调用成功，响应长度=804
+2026-03-16 21:56:25 [INFO] com.kingdee.qa.agent.Agent - [ToolProvider] callApi 完成，结果长度: 1444 字符
+2026-03-16 21:56:31 [INFO] com.kingdee.qa.agent.Agent - 处理完成 总耗时=35384ms 分析=4885ms API=794ms 整理=29705ms 工具调用=3次
+2026-03-16 21:56:31 [ERROR] com.kingdee.qa.agent.Agent - [Stream] 失败: null
+2026-03-16 21:56:31 [ERROR] com.kingdee.qa.web.ChatController - [Stream] error: null
